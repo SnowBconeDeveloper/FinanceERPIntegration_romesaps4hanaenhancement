@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element name="sn_fcms_intg_imp_fixed_asset_details" extends="sys_import_set_row" type="collection" label="Fixed Asset details Stage">
+        <element name="erp_source"         label="ERP source" 			  type="string" max_length="40"/>
+        <element name="asset_id" 		   label="Asset id" 			  type="string" max_length="40"/>
+        <element name="asset_num" 		   label="Asset number" 		  type="string" max_length="40"/>
+        <element name="erp_asset_num" 	   label="ERP Asset number" 	  type="string" max_length="40"/>
+        <element name="erp_asset_sub_num"  label="ERP Asset sub number"   type="string" max_length="40"/>
+        <element name="capitalize_on"      label="Capitalize on" 		  type="string" max_length="40"/>
+        <element name="currency"           label="Currency"               type="string" max_length="40"/>
+        <element name="original_value"     label="Original value" 		  type="string" max_length="40"/>
+        <element name="depreciation_lifecycle"  label="Depreciation lifecycle" 	  type="string" max_length="40"/>
+        <element name="depreciation_term"  label="Depreciation term" 	  type="string" max_length="100"/>
+        <element name="depre_start_date"  label="Depreciation start date" 	  type="string" max_length="40"/>
+        <element name="residual_value"     label="Remaining value" 		  type="string" max_length="40"/>
+        <element name="depreciated_amount" label="Depreciated amount" 	  type="string" max_length="40"/>
+        <element name="salvage_value"      label="Salvage value" 	  	  type="string" max_length="40"/>
+  </element>
+</database>

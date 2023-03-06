@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_fcms_intg_service_element_map">
+  <sn_fcms_intg_service_element_map action="INSERT_OR_UPDATE">
+    <advance>true</advance>
+    <condition/>
+    <element>Variant</element>
+    <foreign_key/>
+    <is_related>false</is_related>
+    <maintain_order>false</maintain_order>
+    <order>125</order>
+    <order_by>completed_on</order_by>
+    <order_type>ascending</order_type>
+    <parent display_value="item">f3714641531633008f12ddeeff7b1222</parent>
+    <script><![CDATA[answer = (function getValueForTarget(current,erpIntgCtxString) {
+	return current.job.parameter_preference.name;
+})(current,erpIntgCtxString);]]></script>
+    <service_map display_value="Schedule Job">a21f7d01531633008f12ddeeff7b12bf</service_map>
+    <source_field>[Script]</source_field>
+    <source_table>x_trint_fin_rpa_job_run</source_table>
+    <sys_class_name>sn_fcms_intg_service_element_map</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-08-26 21:13:28</sys_created_on>
+    <sys_id>2ac9b88d532333008f12ddeeff7b12ce</sys_id>
+    <sys_mod_count>3</sys_mod_count>
+    <sys_name>Variant</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sn_fcms_intg_service_element_map_2ac9b88d532333008f12ddeeff7b12ce</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-11-05 20:01:31</sys_updated_on>
+    <type>element</type>
+  </sn_fcms_intg_service_element_map>
+</record_update>

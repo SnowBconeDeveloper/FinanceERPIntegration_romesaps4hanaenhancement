@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+  <sys_transform_script action="INSERT_OR_UPDATE">
+    <active>true</active>
+    <map display_value="Insert or Update ERP Journal">24955963535213008f12ddeeff7b12b3</map>
+    <order>100</order>
+    <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+    var responseType = source.getValue('response_type');
+    var result = source.getValue('result');
+
+    if (!gs.nil(responseType)) {
+        responseType = responseType.toUpperCase();
+    }
+
+    if (!gs.nil(result)) {
+        result = result.toUpperCase();
+    }
+
+    if (source.target_table != 'x_trint_fcms_journal_header' || responseType != 'POST' || result != 'SUCCESS') {
+        ignore = true;
+    }
+
+    var jeHdr = new GlideRecord("x_trint_fcms_journal_header");
+    if (!jeHdr.get(source.getValue('target_sys_id'))) {
+        log.error(gs.getMessage('Target sys_id is not available in Journal Header table - {0}', source.getValue('target_sys_id')));
+        ignore = true;
+    }
+
+})(source, map, log, target);]]></script>
+    <sys_class_name>sys_transform_script</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2018-09-12 04:57:47</sys_created_on>
+    <sys_id>f9011df8536023008f12ddeeff7b1253</sys_id>
+    <sys_mod_count>6</sys_mod_count>
+    <sys_name>onBefore</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_transform_script_f9011df8536023008f12ddeeff7b1253</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-04-29 12:43:56</sys_updated_on>
+    <when>onBefore</when>
+  </sys_transform_script>
+</record_update>

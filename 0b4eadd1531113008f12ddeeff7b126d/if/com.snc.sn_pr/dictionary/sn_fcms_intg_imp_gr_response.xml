@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<database>
+    <element name="sn_fcms_intg_imp_gr_response" extends="sys_import_set_row" type="collection" label="Goods Receipt Response Stage">
+        <element name="erp_source" label="ERP source" type="string" max_length="40"/>
+        <element name="goods_receipt_id" label="Receipt ID" type="string" max_length="40"/>
+        <element name="goods_receipt_number" label="Receipt number" type="string" max_length="40"/> 
+        <element name="erp_number" label="ERP number" type="string" max_length="40"/>
+        <element name="erp_line_number" label="ERP line number" type="string" max_length="40"/>
+        <element name="op_status" label="Operation status" type="string" max_length="40"/>
+        <element name="msg" label="Message"  type="string" max_length="4000"/>
+  </element>
+</database>

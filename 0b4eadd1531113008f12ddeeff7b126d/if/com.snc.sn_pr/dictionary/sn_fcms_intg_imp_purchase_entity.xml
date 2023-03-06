@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+		<element name="sn_fcms_intg_imp_purchase_entity"  extends="sys_import_set_row" type="collection" label="Purchasing Entity Stage">
+	        <element name="name" label="Name" type="string" max_length="100"/>
+	        <element name="erp_number" label="ERP number" type="string" max_length="40"/> 
+	        <element name="erp_source" label="ERP source" type="string" max_length="40"/>
+	        <element name="legal_entity" label="Legal entity" type="string" max_length="40"/>
+		</element>
+</database>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_fcms_intg_service_map">
+  <sn_fcms_intg_service_map action="INSERT_OR_UPDATE">
+    <base_url>/base_url/</base_url>
+    <credential_alias/>
+    <envelope/>
+    <http_method>post</http_method>
+    <name>Reverse Documents</name>
+    <resource_path>/resource_path/</resource_path>
+    <sample_content>{&#13;
+	"XXSNOW_GLTG_PKG": {&#13;
+		"@xmlns": "http://xmlns.oracle.com/apps/gl/soaprovider/plsql/rest/xxsnow_glrev_pkg/reverse_journal",&#13;
+		"RESTHeader": {&#13;
+			"@xmlns": "http://xmlns.oracle.com/apps/gl/soaprovider/plsql/rest/xxsnow_glrev_pkg/header",&#13;
+			"Responsibility": "XXSNOW_WEBSERVICE_INVOKE",&#13;
+			"ResApplication": "SQLGL",&#13;
+			"SecurityGroup": "STANDARD",&#13;
+			"NLSLanguage": "AMERICAN",&#13;
+			"Org_Id": ""&#13;
+		},&#13;
+		"InputParameters": {&#13;
+			"P_GL_REV_IN_TBL": {&#13;
+				"XXSNOW_GL_REV_IN_REC": [{&#13;
+					"PH_SNOW_JOURNAL_HDR_ID": "1123",&#13;
+					"PH_ORA_JOURNAL_HDR_ID": "7104151",&#13;
+					"PH_PERIOD_NAME": "Feb-19"&#13;
+				}]&#13;
+			},&#13;
+			"P_REVERSAL_METHOD": "SWITCH DR/CR"&#13;
+		}&#13;
+	}&#13;
+}</sample_content>
+    <service>fcms_document_reverse</service>
+    <soap_action/>
+    <soap_endpoint/>
+    <soap_message/>
+    <soap_message_function/>
+    <soap_variable/>
+    <source display_value="Oracle Example">4b0246d00b13230046bc0e7363673a38</source>
+    <sys_class_name>sn_fcms_intg_service_map</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-02-06 23:15:03</sys_created_on>
+    <sys_id>02bd069453a323008f12ddeeff7b12fd</sys_id>
+    <sys_mod_count>3</sys_mod_count>
+    <sys_name>Reverse Documents</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sn_fcms_intg_service_map_02bd069453a323008f12ddeeff7b12fd</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-04-24 10:25:28</sys_updated_on>
+    <type>REST</type>
+    <use_mid>false</use_mid>
+  </sn_fcms_intg_service_map>
+</record_update>

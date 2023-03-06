@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+		<element name="sn_fcms_intg_imp_asset_category"  extends="sys_import_set_row" type="collection" label="Asset Category Stage">
+	        <element name="short_description" label="Description" type="string" max_length="100"/>
+	        <element name="erp_number" label="ERP number" type="string" max_length="40"/> 
+	        <element name="erp_source" label="ERP source" type="string" max_length="40"/>
+		</element>
+</database>

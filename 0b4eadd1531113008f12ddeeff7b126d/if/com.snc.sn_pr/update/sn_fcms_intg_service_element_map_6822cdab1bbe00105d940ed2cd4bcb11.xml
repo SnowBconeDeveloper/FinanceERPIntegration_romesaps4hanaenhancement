@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_fcms_intg_service_element_map">
+  <sn_fcms_intg_service_element_map action="INSERT_OR_UPDATE">
+    <advance>true</advance>
+    <condition/>
+    <element>VperEnd</element>
+    <foreign_key/>
+    <is_related>false</is_related>
+    <maintain_order>false</maintain_order>
+    <order>2000</order>
+    <order_by>amount_paid</order_by>
+    <order_type>ascending</order_type>
+    <parent display_value="Header">87496175533940104c16ddeeff7b124b</parent>
+    <script><![CDATA[answer = (function getValueForTarget(current,erpIntgCtxString) {
+	var order = new sn_shop.PurchaseOrder().getById(current.sys_id);
+	result = new sn_shop.PurchaseRequisitionUtil(order.purchase_requisition).getDateRange();
+	if(!gs.nil(result))
+		return result[1];
+  	return ""; 
+ })(current,erpIntgCtxString);]]></script>
+    <service_map display_value="Post Purchase Order">7b35d72d53b540104c16ddeeff7b1294</service_map>
+    <source_field>[Script]</source_field>
+    <source_table>sn_shop_purchase_order</source_table>
+    <sys_class_name>sn_fcms_intg_service_element_map</sys_class_name>
+    <sys_created_by>abinash.gupta@snc</sys_created_by>
+    <sys_created_on>2020-02-12 05:39:50</sys_created_on>
+    <sys_id>6822cdab1bbe00105d940ed2cd4bcb11</sys_id>
+    <sys_mod_count>4</sys_mod_count>
+    <sys_name>VperEnd</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sn_fcms_intg_service_element_map_6822cdab1bbe00105d940ed2cd4bcb11</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-07-06 18:26:10</sys_updated_on>
+    <type>element</type>
+  </sn_fcms_intg_service_element_map>
+</record_update>

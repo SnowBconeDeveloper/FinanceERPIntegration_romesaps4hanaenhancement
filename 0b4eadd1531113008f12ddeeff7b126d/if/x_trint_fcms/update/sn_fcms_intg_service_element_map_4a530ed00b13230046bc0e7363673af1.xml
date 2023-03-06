@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_fcms_intg_service_element_map">
+  <sn_fcms_intg_service_element_map action="INSERT_OR_UPDATE">
+    <advance>false</advance>
+    <condition/>
+    <element>RESTHeader</element>
+    <foreign_key/>
+    <maintain_order>false</maintain_order>
+    <order>30</order>
+    <order_by/>
+    <order_type>ascending</order_type>
+    <parent display_value="XXSNOW_GLTG_PKG">90f28ad00b13230046bc0e7363673a7d</parent>
+    <script><![CDATA[answer = (function getValueForTarget(current,erpIntgCtxString) {
+  	// Add your code here
+  	return ""; 
+ })(current,erpIntgCtxString);]]></script>
+    <service_map display_value="Post Documents">c9d24ad00b13230046bc0e7363673a1a</service_map>
+    <source_field/>
+    <source_table/>
+    <sys_class_name>sn_fcms_intg_service_element_map</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-01-25 12:12:47</sys_created_on>
+    <sys_id>4a530ed00b13230046bc0e7363673af1</sys_id>
+    <sys_mod_count>2</sys_mod_count>
+    <sys_name>RESTHeader</sys_name>
+    <sys_package display_value="Financial Close Management System - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sn_fcms_intg_service_element_map_4a530ed00b13230046bc0e7363673af1</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-01-25 12:38:42</sys_updated_on>
+    <type>container</type>
+  </sn_fcms_intg_service_element_map>
+</record_update>

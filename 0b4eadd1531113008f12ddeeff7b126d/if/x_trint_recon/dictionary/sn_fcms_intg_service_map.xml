@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<database>
+    <element name="sn_fcms_intg_service_map" type="collection" extends="sys_metadata" label="Service Map" attributes="update_synch=true">
+        <element name="service" type="string" label="Service" choice="3" default_value="fcms_document_post" hint="ERP Service" >
+  	      	<choice>
+                <element value="recon_fetch_bank_balance" sequence="50" label="Fetch Bank Balance"/>
+			</choice>
+		</element>
+   </element>
+</database>

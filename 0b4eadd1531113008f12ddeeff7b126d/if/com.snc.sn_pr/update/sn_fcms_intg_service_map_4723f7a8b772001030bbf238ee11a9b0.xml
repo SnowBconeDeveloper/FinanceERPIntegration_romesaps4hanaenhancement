@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_fcms_intg_service_map">
+  <sn_fcms_intg_service_map action="INSERT_OR_UPDATE">
+    <allow_empty>false</allow_empty>
+    <base_url/>
+    <credential_alias/>
+    <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:soap:functions:mc-style">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:_-now_-spendGrCreateApi>
+         <ItGrDocs>
+            <!--Zero or more repetitions:-->
+            <item>
+               <GrId>?</GrId>
+               <GrSysId>?</GrSysId>
+               <Header>
+                  <DocDate>?</DocDate>
+                  <RefDocNo>?</RefDocNo>
+                  <HeaderTxt>?</HeaderTxt>
+               </Header>
+               <Items>
+                  <!--Zero or more repetitions:-->
+                  <item>
+                     <EntryQnt>?</EntryQnt>
+                     <PoItem>?</PoItem>
+					  <Vendor>?</Vendor>
+					 <ItemText>?</ItemText>
+                  </item>
+               </Items>
+            </item>
+         </ItGrDocs>
+         <!--Optional:-->
+         <Source>?</Source>
+         <!--Optional:-->
+         <Testrun>?</Testrun>
+      </urn:_-now_-spendGrCreateApi>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+    <http_method>post</http_method>
+    <name>Post Goods Receipt</name>
+    <resource_path/>
+    <sample_content/>
+    <service>shop_post_goods_receipt</service>
+    <soap_action>urn:sap-com:document:sap:soap:functions:mc-style:_-NOW_-SPEND_GR:_-now_-spendGrCreateApiRequest</soap_action>
+    <soap_endpoint>/endpoint/</soap_endpoint>
+    <soap_message/>
+    <soap_message_function/>
+    <soap_variable/>
+    <source display_value="SAP ECC">b8277d61738213008f12d9be2bf6a784</source>
+    <sys_class_name>sn_fcms_intg_service_map</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2020-02-03 10:51:47</sys_created_on>
+    <sys_id>4723f7a8b772001030bbf238ee11a9b0</sys_id>
+    <sys_mod_count>3</sys_mod_count>
+    <sys_name>Post Goods Receipt</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sn_fcms_intg_service_map_4723f7a8b772001030bbf238ee11a9b0</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-03-06 12:50:56</sys_updated_on>
+    <type>SOAP</type>
+    <use_mid>true</use_mid>
+  </sn_fcms_intg_service_map>
+</record_update>

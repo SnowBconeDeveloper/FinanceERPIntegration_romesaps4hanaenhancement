@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_fcms_intg_service_element_map">
+  <sn_fcms_intg_service_element_map action="INSERT_OR_UPDATE">
+    <advance>false</advance>
+    <condition/>
+    <element>XXSNOW_GL_REV_IN_REC</element>
+    <foreign_key>comments</foreign_key>
+    <is_related>false</is_related>
+    <maintain_order>false</maintain_order>
+    <order>120</order>
+    <order_by>comments</order_by>
+    <order_type>ascending</order_type>
+    <parent display_value="P_GL_REV_IN_TBL">6100be18536323008f12ddeeff7b1250</parent>
+    <script><![CDATA[answer = (function getValueForTarget(current,erpIntgCtxString) {
+  	// Add your code here
+  	return ""; 
+ })(current,erpIntgCtxString);]]></script>
+    <service_map display_value="Reverse Documents">02bd069453a323008f12ddeeff7b12fd</service_map>
+    <source_field>comments</source_field>
+    <source_table>x_trint_fcms_journal_header</source_table>
+    <sys_class_name>sn_fcms_intg_service_element_map</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-02-06 23:15:07</sys_created_on>
+    <sys_id>301e869453a323008f12ddeeff7b1267</sys_id>
+    <sys_mod_count>3</sys_mod_count>
+    <sys_name>XXSNOW_GL_REV_IN_REC</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sn_fcms_intg_service_element_map_301e869453a323008f12ddeeff7b1267</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-02-07 01:44:54</sys_updated_on>
+    <type>container-array</type>
+  </sn_fcms_intg_service_element_map>
+</record_update>

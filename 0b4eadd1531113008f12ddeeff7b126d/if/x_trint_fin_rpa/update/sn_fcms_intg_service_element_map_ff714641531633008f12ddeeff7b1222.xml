@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_fcms_intg_service_element_map">
+  <sn_fcms_intg_service_element_map action="INSERT_OR_UPDATE">
+    <advance>true</advance>
+    <condition/>
+    <element>ValueTo</element>
+    <foreign_key/>
+    <is_related>false</is_related>
+    <maintain_order>false</maintain_order>
+    <order>200</order>
+    <order_by>sys_created_on</order_by>
+    <order_type>ascending</order_type>
+    <parent display_value="item">7b714641531633008f12ddeeff7b1222</parent>
+    <script><![CDATA[answer = (function getValueForTarget(current, erpIntgCtxString) {
+	var jobOption2 = current.getValue('date_option_2');
+	var value = current.getValue('value_2');
+
+	if (!gs.nil(jobOption2) && (jobOption2 != value))
+		value = x_trint_fin_rpa.JobParamEvaluator.compute(current.getValue('sys_id'), jobOption2);
+
+	var dataType = current.input_parameter.data_type.toString();
+
+	switch (dataType) {
+		case 'date':
+			value = value.replace(/-/g, '');
+			break;
+		case 'boolean':
+			if (!gs.nil(value) && value != false && value != 'false')
+				value = 'X';
+			else
+				value = '';
+			break;
+	}
+	return value;
+})(current, erpIntgCtxString);]]></script>
+    <service_map display_value="Schedule Job">a21f7d01531633008f12ddeeff7b12bf</service_map>
+    <source_field>[Script]</source_field>
+    <source_table>x_trint_fin_rpa_job_parameter</source_table>
+    <sys_class_name>sn_fcms_intg_service_element_map</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-06-25 23:08:18</sys_created_on>
+    <sys_id>ff714641531633008f12ddeeff7b1222</sys_id>
+    <sys_mod_count>8</sys_mod_count>
+    <sys_name>ValueTo</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy/>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sn_fcms_intg_service_element_map_ff714641531633008f12ddeeff7b1222</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2019-11-13 00:32:44</sys_updated_on>
+    <type>element</type>
+  </sn_fcms_intg_service_element_map>
+</record_update>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+  <sys_script_include action="INSERT_OR_UPDATE">
+    <access>package_private</access>
+    <active>true</active>
+    <api_name>sn_fcms_intg.SpendMasterDataService</api_name>
+    <caller_access/>
+    <client_callable>false</client_callable>
+    <description/>
+    <name>SpendMasterDataService</name>
+    <script><![CDATA[var SpendMasterDataService = Class.create();
+
+SpendMasterDataService.masterDataServiceList = [SpendIntgConstants.ERP_SERVICE_FETCH_PROFIT_CENTERS,
+												SpendIntgConstants.ERP_SERVICE_FETCH_PURCHASING_ENTITY,
+												SpendIntgConstants.ERP_SERVICE_FETCH_COST_CENTER,
+												SpendIntgConstants.ERP_SERVICE_FETCH_SUPPLIER,
+											    SpendIntgConstants.ERP_SERVICE_FETCH_ASSET_CATEGORY,
+											    SpendIntgConstants.ERP_SERVICE_FETCH_MATERIAL_GROUP,
+											    SpendIntgConstants.ERP_SERVICE_FETCH_DELIVERY_ADDRESS,
+												SpendIntgConstants.ERP_SERVICE_FETCH_UOM];
+
+
+SpendMasterDataService.doFetch = function(sourceConfig){
+	var serviceMapGr = IntegrationServiceMap.getServiceMapsForSource(SpendMasterDataService.masterDataServiceList, sourceConfig.getValue('sys_id'));
+	var response;
+	var service;
+	var message = '<response>';
+	var status = IntgConstants.STATUS_SUCCESS;
+	while(serviceMapGr.next()) {
+		service = serviceMapGr.getValue('service');
+		response = SpendMasterDataService.sendRequest(service, sourceConfig);
+		if(response.status != IntgConstants.STATUS_SUCCESS){
+			gs.error("Error in fetching master data: STATUS - " + response.status + ' : ERROR - ' + response.message);
+			status = IntgConstants.STATUS_FAIL;
+			message = message + '<service name=' + service + ' status='+ response.status + '>' + response.message + '</service>';
+		}
+		else
+			message = message + '<service name=' + service + ' status='+ response.status + '></service>';
+	}
+	message = message + '</response>';
+	return {"status": status, "message": message};
+};
+
+SpendMasterDataService.sendRequest = function(service, sourceConfig){
+	var result = {};
+	var erpSourceId = sourceConfig.getValue('fin_erp');
+	if(!sourceConfig.hasValidService(service) ) {
+		result.status = IntgConstants.STATUS_FAILURE;
+		result.message = gs.getMessage("Integration not setup");
+		return result;
+	}
+	var input = {};
+	var context = {"erp_source": erpSourceId};
+	ErpIntegrator.doService(service, sourceConfig, input, context);
+
+	return {"status": IntgConstants.STATUS_SUCCESS};
+};
+
+SpendMasterDataService.prototype = {
+    initialize: function() {
+    },
+
+    type: 'SpendMasterDataService'
+};]]></script>
+    <sys_class_name>sys_script_include</sys_class_name>
+    <sys_created_by>admin</sys_created_by>
+    <sys_created_on>2019-12-15 18:07:09</sys_created_on>
+    <sys_id>02477b24537500104c16ddeeff7b12b4</sys_id>
+    <sys_mod_count>18</sys_mod_count>
+    <sys_name>SpendMasterDataService</sys_name>
+    <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+    <sys_policy>read</sys_policy>
+    <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+    <sys_update_name>sys_script_include_02477b24537500104c16ddeeff7b12b4</sys_update_name>
+    <sys_updated_by>admin</sys_updated_by>
+    <sys_updated_on>2020-07-10 19:16:23</sys_updated_on>
+  </sys_script_include>
+</record_update>

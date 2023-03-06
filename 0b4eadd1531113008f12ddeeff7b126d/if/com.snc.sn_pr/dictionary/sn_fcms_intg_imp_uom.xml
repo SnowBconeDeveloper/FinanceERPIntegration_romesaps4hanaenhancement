@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element name="sn_fcms_intg_imp_uom" extends="sys_import_set_row" type="collection" label="Unit of measure Stage">
+        <element name="erp_unit" label="ERP unit" type="string" max_length="40"/>
+        <element name="erp_source" label="ERP source" type="string" max_length="40"/>
+        <element name="erp_unit_description" label="ERP unit description" type="string" max_length="100"/>
+    </element>
+</database>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<database>
+    <element name="sn_fcms_intg_source" type="collection" extends="sys_metadata" label="ERP Source Configuration">
+   		<element name="erp" type="string" label="ERP" hint="ERP Software Name" default_value="sap" choice="3" max_length="10">
+			<choice>
+				<element value="sap" sequence="0" label="SAP"/>
+				<element value="oracle" sequence="1" label="Oracle"/>
+				<element value="netsuite" sequence="2" label="NetSuite"/>
+ 			</choice>
+		</element>
+        <element name="name" type="string" label="Name" hint="ERP Name" />
+        <element name="inactive" type="boolean" label="Inactive" hint="Inactive status" />
+        <element name="fin_erp" type="reference" label="ERP source" 
+        	reference="sn_fin_erp_source" reference_qual="active=true^EQ" mandatory="true"/>      	
+	</element>
+</database>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="update_synch=true" db_object_id="5430a332c3712150f78f58e1b401315b" extends="sys_metadata" label="ERP Source Configuration" max_length="40" name="sn_fcms_intg_source" type="collection">
+    <element attributes="update_synch=true" extends="sys_metadata" label="ERP Source Configuration" max_length="40" name="sn_fcms_intg_source" type="collection">
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Connection &amp; Credential Alias" max_length="32" name="connection" reference="sys_alias" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="ERP" max_length="40" name="erp" type="string">
             <choice>
@@ -11,10 +11,10 @@
         <element label="Inactive" max_length="40" name="inactive" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="name" type="string"/>
         <index name="index">
-            <element name="fin_erp"/>
+            <element name="connection"/>
         </index>
         <index name="index2">
-            <element name="connection"/>
+            <element name="fin_erp"/>
         </index>
     </element>
 </database>

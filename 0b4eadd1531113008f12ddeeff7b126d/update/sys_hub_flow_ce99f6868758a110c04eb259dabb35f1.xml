@@ -6,6 +6,7 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
+        <compiler_build>glide-sandiego-12-22-2021__patch9b-01-18-2023_01-31-2023_1707.zip</compiler_build>
         <copied_from/>
         <copied_from_name/>
         <description/>
@@ -15,7 +16,6 @@
         <name>Create invoice in ERP</name>
         <natlang/>
         <outputs/>
-        <pre_compiled>false</pre_compiled>
         <remote_trigger_id>a672842f87b12d50c04eb259dabb3522</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -36,8 +36,8 @@
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_hub_flow_ce99f6868758a110c04eb259dabb35f1</sys_update_name>
-        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-03-31 10:06:43</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-14 05:05:45</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=ce99f6868758a110c04eb259dabb35f1"/>
@@ -201,7 +201,6 @@
         <element>changed_fields</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -248,7 +247,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -284,7 +282,6 @@
         <element>table_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -331,7 +328,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -367,7 +363,6 @@
         <element>current</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -414,7 +409,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -490,7 +484,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -537,7 +530,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -624,7 +616,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -671,7 +662,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -784,7 +774,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -831,7 +820,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -930,7 +918,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -977,7 +964,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1090,7 +1076,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1137,7 +1122,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1236,7 +1220,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1283,7 +1266,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1356,7 +1338,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1403,7 +1384,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1854,7 +1834,7 @@
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_ce99f6868758a110c04eb259dabb35f1_current_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2023-01-11 17:31:51</sys_updated_on>
         <url/>
@@ -1877,7 +1857,7 @@
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_ce99f6868758a110c04eb259dabb35f1_changed_fields_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2023-01-11 17:31:51</sys_updated_on>
         <url/>
@@ -1900,7 +1880,7 @@
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_ce99f6868758a110c04eb259dabb35f1_table_name_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2023-01-11 17:31:51</sys_updated_on>
         <url/>
@@ -2078,7 +2058,6 @@
         <element>current</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2125,7 +2104,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2161,7 +2139,6 @@
         <element>changed_fields</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2208,7 +2185,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2244,7 +2220,6 @@
         <element>table_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2291,7 +2266,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2381,7 +2355,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2428,7 +2401,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2501,7 +2473,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2548,7 +2519,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2647,7 +2617,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2694,7 +2663,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2793,7 +2761,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2840,7 +2807,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2953,7 +2919,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3000,7 +2965,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3113,7 +3077,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3160,7 +3123,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3233,7 +3195,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3280,7 +3241,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3731,7 +3691,7 @@
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d8f04b8e8758a110c04eb259dabb3538_table_name_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2023-01-11 17:31:55</sys_updated_on>
         <url/>
@@ -3754,7 +3714,7 @@
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d8f04b8e8758a110c04eb259dabb3538_changed_fields_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2023-01-11 17:31:55</sys_updated_on>
         <url/>
@@ -3777,7 +3737,7 @@
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d8f04b8e8758a110c04eb259dabb3538_current_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2023-01-11 17:31:54</sys_updated_on>
         <url/>
@@ -3786,9 +3746,8 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d8f04b8e8758a110c04eb259dabb3538"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_d8f04b8e8758a110c04eb259dabb3538"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d8f04b8e8758a110c04eb259dabb3538"/>
-    <sys_hub_flow action="UPDATE">
+    <sys_hub_flow action="update">
         <sys_id>ce99f6868758a110c04eb259dabb35f1</sys_id>
         <latest_snapshot>d8f04b8e8758a110c04eb259dabb3538</latest_snapshot>
-        <compiler_build>glide-sandiego-12-22-2021__patch9b-01-18-2023_01-31-2023_1707.zip</compiler_build>
     </sys_hub_flow>
 </record_update>

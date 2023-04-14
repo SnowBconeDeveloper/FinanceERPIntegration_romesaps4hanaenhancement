@@ -6,6 +6,7 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
+        <compiler_build>glide-tokyo-07-08-2022__patch6-hotfix1-02-01-2023_02-02-2023_0949.zip</compiler_build>
         <copied_from>59885c7c47d71110eac25bf3836d43b0</copied_from>
         <copied_from_name>Create purchase order in ERP</copied_from_name>
         <description/>
@@ -15,7 +16,6 @@
         <name>Update purchase order in ERP</name>
         <natlang/>
         <outputs/>
-        <pre_compiled>false</pre_compiled>
         <remote_trigger_id>75397ead87a9a910f245322e0ebb35a8</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -36,8 +36,8 @@
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_hub_flow_e4bfba8287192d10c04eb259dabb3515</sys_update_name>
-        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-03-31 10:07:18</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-04-14 05:05:51</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=e4bfba8287192d10c04eb259dabb3515"/>
@@ -190,7 +190,6 @@
         <element>changed_fields</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -237,7 +236,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -273,7 +271,6 @@
         <element>current</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -320,7 +317,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -356,7 +352,6 @@
         <element>table_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -403,7 +398,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -417,6 +411,7 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Update purchase order in ERP">e4bfba8287192d10c04eb259dabb3515</flow>
         <order>6</order>
@@ -505,6 +500,7 @@
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
         <comment/>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Update purchase order in ERP">e4bfba8287192d10c04eb259dabb3515</flow>
         <order>7</order>
@@ -593,6 +589,7 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Update purchase order in ERP">e4bfba8287192d10c04eb259dabb3515</flow>
         <order>9</order>
@@ -769,7 +766,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -816,7 +812,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -916,7 +911,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -963,7 +957,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1036,7 +1029,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1083,7 +1075,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1196,7 +1187,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1243,7 +1233,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1788,7 +1777,6 @@
         <element>status</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1835,7 +1823,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2082,7 +2069,6 @@
         <element>current</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2129,7 +2115,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2165,7 +2150,6 @@
         <element>table_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2212,7 +2196,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2248,7 +2231,6 @@
         <element>changed_fields</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2295,7 +2277,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2309,6 +2290,7 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Update purchase order in ERP">e6d4c70a87192d10c04eb259dabb35d5</flow>
         <order>6</order>
@@ -2397,6 +2379,7 @@
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
         <comment/>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Update purchase order in ERP">e6d4c70a87192d10c04eb259dabb35d5</flow>
         <order>7</order>
@@ -2485,6 +2468,7 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
+        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Update purchase order in ERP">e6d4c70a87192d10c04eb259dabb35d5</flow>
         <order>9</order>
@@ -2675,7 +2659,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2722,7 +2705,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2821,7 +2803,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2868,7 +2849,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2954,7 +2934,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3001,7 +2980,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3088,7 +3066,6 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3135,7 +3112,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3680,7 +3656,6 @@
         <element>status</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3727,7 +3702,6 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3805,9 +3779,8 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e6d4c70a87192d10c04eb259dabb35d5"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e6d4c70a87192d10c04eb259dabb35d5"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e6d4c70a87192d10c04eb259dabb35d5"/>
-    <sys_hub_flow action="UPDATE">
+    <sys_hub_flow action="update">
         <sys_id>e4bfba8287192d10c04eb259dabb3515</sys_id>
         <latest_snapshot>e6d4c70a87192d10c04eb259dabb35d5</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch6-hotfix1-02-01-2023_02-02-2023_0949.zip</compiler_build>
     </sys_hub_flow>
 </record_update>

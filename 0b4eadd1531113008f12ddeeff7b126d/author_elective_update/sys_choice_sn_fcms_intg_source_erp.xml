@@ -6,6 +6,7 @@
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>satya</sys_created_by>
             <sys_created_on>2022-10-10 13:04:05</sys_created_on>
+            <sys_id>db2257fbc30ea110f827dff9050131fc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>erp</sys_name>
             <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>

@@ -10,7 +10,7 @@
         <copied_from_name>Identify Target ERP</copied_from_name>
         <description/>
         <internal_name>identify_target_erp</internal_name>
-        <label_cache>[{"name":"subflow.erp_source.sys_id","label":"Input➛ERP Source➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_fin_erp_source","column_name":"sys_id"},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record.erp","label":"1 - Look Up Record➛ERP Source Configuration Record➛ERP","reference":"","reference_display":"ERP","type":"choice","base_type":"choice","parent_table_name":"sn_fcms_intg_source","column_name":"erp","choices":[{"label":"-- None --","used":false,"missing":false,"image":"","selected":false,"rawLabel":"-- None --","reference":false,"value":""},{"used":false,"label":"SAP","missing":false,"image":"","selected":false,"rawLabel":"SAP","reference":false,"value":"sap","parameters":{"name":"sn_fcms_intg_source"}},{"used":false,"label":"Oracle","missing":false,"image":"","selected":false,"rawLabel":"Oracle","reference":false,"value":"oracle","parameters":{"name":"sn_fcms_intg_source"}},{"used":false,"label":"NetSuite","missing":false,"image":"","selected":false,"rawLabel":"NetSuite","reference":false,"value":"netsuite","parameters":{"name":"sn_fcms_intg_source"}}]},{"name":"subflow.erp_source","label":"Input➛ERP Source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8ccf2634-1463-48ef-87c5-69c15849564a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Table","label":"1 - Look Up Record➛ERP Source Configuration Table","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record","label":"1 - Look Up Record➛ERP Source Configuration Record","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.Record","label":"1 - Look Up Record➛ERP Source Configuration Record","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.Table","label":"1 - Look Up Record➛ERP Source Configuration Table","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record.u_connection","label":"1 - Look Up Record➛ERP Source Configuration Record➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","parent_table_name":"sn_fcms_intg_source","column_name":"u_connection"},{"name":"5017b3d8-6eb9-4f71-9d68-a5aaf7e7ca26.__status__","label":"3 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5017b3d8-6eb9-4f71-9d68-a5aaf7e7ca26.__status__.message","label":"3 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <label_cache>[{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record.u_connection.sys_scope.scope","label":"1 - Look Up Record➛ERP Source Configuration Record➛Connection \u0026 Credential Alias➛Application➛Scope","reference":"","reference_display":"Scope","type":"string","base_type":"string","parent_table_name":"sys_scope","column_name":"scope"},{"name":"subflow.erp_source.sys_id","label":"Input➛ERP Source➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_fin_erp_source","column_name":"sys_id"},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record.erp","label":"1 - Look Up Record➛ERP Source Configuration Record➛ERP","reference":"","reference_display":"ERP","type":"choice","base_type":"choice","parent_table_name":"sn_fcms_intg_source","column_name":"erp","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"image":"","value":""},{"label":"SAP S4 Hana","used":false,"rawLabel":"SAP S4 Hana","selected":false,"missing":false,"reference":false,"image":"","value":"sap_hana","parameters":{"name":"sn_fcms_intg_source"}},{"label":"SAP ECC","used":false,"rawLabel":"SAP ECC","selected":false,"missing":false,"reference":false,"image":"","value":"sap_ecc","parameters":{"name":"sn_fcms_intg_source"}}]},{"name":"subflow.erp_source","label":"Input➛ERP Source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8ccf2634-1463-48ef-87c5-69c15849564a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Table","label":"1 - Look Up Record➛ERP Source Configuration Table","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record","label":"1 - Look Up Record➛ERP Source Configuration Record","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.Record","label":"1 - Look Up Record➛ERP Source Configuration Record","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.Table","label":"1 - Look Up Record➛ERP Source Configuration Table","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record.u_connection","label":"1 - Look Up Record➛ERP Source Configuration Record➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","parent_table_name":"sn_fcms_intg_source","column_name":"u_connection"},{"name":"5017b3d8-6eb9-4f71-9d68-a5aaf7e7ca26.__status__","label":"4 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5017b3d8-6eb9-4f71-9d68-a5aaf7e7ca26.__status__.message","label":"3 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
         <master_snapshot>ed57103c47d71110eac25bf3836d4308</master_snapshot>
         <name>Identify target ERP</name>
         <natlang/>
@@ -37,7 +37,7 @@
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_hub_flow_21611cb447d71110eac25bf3836d43d5</sys_update_name>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-03-31 10:03:58</sys_updated_on>
+        <sys_updated_on>2023-04-18 06:15:20</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=21611cb447d71110eac25bf3836d43d5"/>
@@ -108,7 +108,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="">sn_fin_erp_source</reference>
+        <reference display_value="" name="sn_fin_erp_source">sn_fin_erp_source</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -137,7 +137,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -221,7 +221,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -304,7 +304,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -387,7 +387,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -470,7 +470,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -491,10 +491,10 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 14:29:54</sys_created_on>
         <sys_id>3f615cb447d71110eac25bf3836d4371</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 07:21:40</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:21:50</sys_updated_on>
         <ui_id>c15bbde4-ee6f-4bc7-9ec5-c07577cd1869</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3f615cb447d71110eac25bf3836d4371"/>
@@ -562,10 +562,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-23 07:21:29</sys_created_on>
         <sys_id>590fb63b87371d10c04eb259dabb3530</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 07:21:40</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:21:50</sys_updated_on>
         <ui_id>5017b3d8-6eb9-4f71-9d68-a5aaf7e7ca26</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -625,10 +625,10 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 14:29:45</sys_created_on>
         <sys_id>b5611cb447d71110eac25bf3836d43f5</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 07:21:40</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:21:50</sys_updated_on>
         <ui_id>6a5dc02b-b462-4c9a-bed7-e654ac10b333</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -679,11 +679,11 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 14:29:45</sys_created_on>
         <sys_id>75611cb447d71110eac25bf3836d43f8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2022-11-18 14:29:45</sys_updated_on>
+        <sys_updated_on>2023-04-18 04:58:20</sys_updated_on>
         <table>var__m_sys_hub_flow_output_21611cb447d71110eac25bf3836d43d5</table>
-        <value>{{c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record.erp}}</value>
+        <value>{{c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record.u_connection.sys_scope.scope}}</value>
     </sys_element_mapping>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b5611cb447d71110eac25bf3836d43f5"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=b5611cb447d71110eac25bf3836d43f5"/>
@@ -709,10 +709,10 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 14:29:45</sys_created_on>
         <sys_id>b9611cb447d71110eac25bf3836d43f1</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 07:21:40</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:21:50</sys_updated_on>
         <ui_id>593b6f83-5207-41a1-9c68-594deed27b91</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -781,10 +781,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-23 07:21:28</sys_created_on>
         <sys_id>cd0f763b87371d10c04eb259dabb35c6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 07:21:40</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:21:50</sys_updated_on>
         <ui_id>adb87b2f-40b3-4d23-aa5b-6c8df02036fe</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -815,10 +815,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-23 07:21:29</sys_created_on>
         <sys_id>d10fb63b87371d10c04eb259dabb3535</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 07:21:41</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:21:50</sys_updated_on>
         <ui_id>2504a5a6-8c10-4d7f-bd4c-57bc292b48ff</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1005,7 +1005,7 @@
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=21611cb447d71110eac25bf3836d43d5"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=21611cb447d71110eac25bf3836d43d5^sys_idNOT IN5267503c47d71110eac25bf3836d4384"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@4120f7</plan>
+        <plan>com.snc.process_flow.engine.ProcessPlan@b6a5f7</plan>
         <plan_id display_value="Identify target ERP">21611cb447d71110eac25bf3836d43d5</plan_id>
         <snapshot>ed57103c47d71110eac25bf3836d4308</snapshot>
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
@@ -1013,11 +1013,11 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5267503c47d71110eac25bf3836d4384</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 07:21:39</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:21:49</sys_updated_on>
     </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1030,7 +1030,7 @@
         <copied_from_name/>
         <description/>
         <internal_name>identify_target_erp</internal_name>
-        <label_cache>[{"name":"subflow.erp_source.sys_id","label":"Input➛ERP Source➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_fin_erp_source","column_name":"sys_id"},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record.erp","label":"1 - Look Up Record➛ERP Source Configuration Record➛ERP","reference":"","reference_display":"ERP","type":"choice","base_type":"choice","parent_table_name":"sn_fcms_intg_source","column_name":"erp","choices":[{"label":"-- None --","used":false,"missing":false,"image":"","selected":false,"rawLabel":"-- None --","reference":false,"value":""},{"used":false,"label":"SAP","missing":false,"image":"","selected":false,"rawLabel":"SAP","reference":false,"value":"sap","parameters":{"name":"sn_fcms_intg_source"}},{"used":false,"label":"Oracle","missing":false,"image":"","selected":false,"rawLabel":"Oracle","reference":false,"value":"oracle","parameters":{"name":"sn_fcms_intg_source"}},{"used":false,"label":"NetSuite","missing":false,"image":"","selected":false,"rawLabel":"NetSuite","reference":false,"value":"netsuite","parameters":{"name":"sn_fcms_intg_source"}}]},{"name":"subflow.erp_source","label":"Input➛ERP Source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8ccf2634-1463-48ef-87c5-69c15849564a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Table","label":"1 - Look Up Record➛ERP Source Configuration Table","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record","label":"1 - Look Up Record➛ERP Source Configuration Record","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.Record","label":"1 - Look Up Record➛ERP Source Configuration Record","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.Table","label":"1 - Look Up Record➛ERP Source Configuration Table","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record.u_connection","label":"1 - Look Up Record➛ERP Source Configuration Record➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","parent_table_name":"sn_fcms_intg_source","column_name":"u_connection"},{"name":"5017b3d8-6eb9-4f71-9d68-a5aaf7e7ca26.__status__","label":"3 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5017b3d8-6eb9-4f71-9d68-a5aaf7e7ca26.__status__.message","label":"3 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <label_cache>[{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record.u_connection.sys_scope.scope","label":"1 - Look Up Record➛ERP Source Configuration Record➛Connection \u0026 Credential Alias➛Application➛Scope","reference":"","reference_display":"Scope","type":"string","base_type":"string","parent_table_name":"sys_scope","column_name":"scope"},{"name":"subflow.erp_source.sys_id","label":"Input➛ERP Source➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_fin_erp_source","column_name":"sys_id"},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record.erp","label":"1 - Look Up Record➛ERP Source Configuration Record➛ERP","reference":"","reference_display":"ERP","type":"choice","base_type":"choice","parent_table_name":"sn_fcms_intg_source","column_name":"erp","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"reference":false,"image":"","value":""},{"label":"SAP S4 Hana","used":false,"rawLabel":"SAP S4 Hana","selected":false,"missing":false,"reference":false,"image":"","value":"sap_hana","parameters":{"name":"sn_fcms_intg_source"}},{"label":"SAP ECC","used":false,"rawLabel":"SAP ECC","selected":false,"missing":false,"reference":false,"image":"","value":"sap_ecc","parameters":{"name":"sn_fcms_intg_source"}}]},{"name":"subflow.erp_source","label":"Input➛ERP Source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8ccf2634-1463-48ef-87c5-69c15849564a","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Table","label":"1 - Look Up Record➛ERP Source Configuration Table","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record","label":"1 - Look Up Record➛ERP Source Configuration Record","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.Record","label":"1 - Look Up Record➛ERP Source Configuration Record","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.Table","label":"1 - Look Up Record➛ERP Source Configuration Table","reference":"sn_fcms_intg_source","reference_display":"ERP Source Configuration","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b17ded41-eb53-4ca3-9b90-0991845ff62e.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record.u_connection","label":"1 - Look Up Record➛ERP Source Configuration Record➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","parent_table_name":"sn_fcms_intg_source","column_name":"u_connection"},{"name":"5017b3d8-6eb9-4f71-9d68-a5aaf7e7ca26.__status__","label":"4 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5017b3d8-6eb9-4f71-9d68-a5aaf7e7ca26.__status__.message","label":"3 - Top Level Catch➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
         <master>true</master>
         <name>Identify target ERP</name>
         <natlang/>
@@ -1047,15 +1047,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ed57103c47d71110eac25bf3836d4308</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 07:21:37</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:21:42</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=ed57103c47d71110eac25bf3836d4308"/>
@@ -1126,7 +1126,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="">sn_fin_erp_source</reference>
+        <reference display_value="" name="sn_fin_erp_source">sn_fin_erp_source</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -1155,7 +1155,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1239,7 +1239,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1322,7 +1322,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1405,7 +1405,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1488,7 +1488,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1509,10 +1509,10 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 14:55:51</sys_created_on>
         <sys_id>4467103c47d71110eac25bf3836d43c2</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 07:21:37</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:21:42</sys_updated_on>
         <ui_id>c15bbde4-ee6f-4bc7-9ec5-c07577cd1869</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4467103c47d71110eac25bf3836d43c2"/>
@@ -1580,10 +1580,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-23 07:21:35</sys_created_on>
         <sys_id>3e0ff63b87371d10c04eb259dabb3514</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 07:21:36</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:21:42</sys_updated_on>
         <ui_id>adb87b2f-40b3-4d23-aa5b-6c8df02036fe</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1613,10 +1613,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-23 07:21:36</sys_created_on>
         <sys_id>4f0ff63b87371d10c04eb259dabb3525</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 07:21:37</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:21:42</sys_updated_on>
         <ui_id>5017b3d8-6eb9-4f71-9d68-a5aaf7e7ca26</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1676,10 +1676,10 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 14:55:42</sys_created_on>
         <sys_id>b157103c47d71110eac25bf3836d4341</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 07:21:37</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:21:42</sys_updated_on>
         <ui_id>593b6f83-5207-41a1-9c68-594deed27b91</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1749,10 +1749,10 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 14:55:42</sys_created_on>
         <sys_id>b557103c47d71110eac25bf3836d4345</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 07:21:37</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:21:42</sys_updated_on>
         <ui_id>6a5dc02b-b462-4c9a-bed7-e654ac10b333</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1803,11 +1803,11 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 14:55:42</sys_created_on>
         <sys_id>3957103c47d71110eac25bf3836d4348</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2022-11-18 14:55:42</sys_updated_on>
+        <sys_updated_on>2023-04-18 04:58:30</sys_updated_on>
         <table>var__m_sys_hub_flow_output_ed57103c47d71110eac25bf3836d4308</table>
-        <value>{{c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record.erp}}</value>
+        <value>{{c15bbde4-ee6f-4bc7-9ec5-c07577cd1869.Record.u_connection.sys_scope.scope}}</value>
     </sys_element_mapping>
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b557103c47d71110eac25bf3836d4345"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=b557103c47d71110eac25bf3836d4345"/>
@@ -1833,10 +1833,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-23 07:21:36</sys_created_on>
         <sys_id>cb0ff63b87371d10c04eb259dabb3529</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 07:21:37</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:21:42</sys_updated_on>
         <ui_id>2504a5a6-8c10-4d7f-bd4c-57bc292b48ff</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2023,6 +2023,6 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>21611cb447d71110eac25bf3836d43d5</sys_id>
         <latest_snapshot>ed57103c47d71110eac25bf3836d4308</latest_snapshot>
-        <compiler_build>glide-sandiego-12-22-2021__patch9-11-10-2022_11-23-2022_1843.zip</compiler_build>
+        <compiler_build>glide-sandiego-12-22-2021__patch10-hotfix1-02-10-2023_02-17-2023_1324.zip</compiler_build>
     </sys_hub_flow>
 </record_update>

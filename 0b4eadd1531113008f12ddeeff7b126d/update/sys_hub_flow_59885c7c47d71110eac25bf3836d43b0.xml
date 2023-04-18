@@ -10,13 +10,13 @@
         <copied_from_name>Post Purchase Order to ERP</copied_from_name>
         <description/>
         <internal_name>create_purchase_order_in_erp</internal_name>
-        <label_cache>[{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.error_message","label":"1 - Identify target ERP➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"baeb27ab-84b2-44ed-863a-994e0849dec4"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__dont_treat_as_error__","label":"18 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__action_status__","label":"18 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.table_name","label":"18 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.record","label":"18 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6d24684e-5dfe-4e4f-a6c0-a6606c7a23f5.item","label":"17 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.TAX_CODE","label":"11➛Item Data [ IT_POITEM ]_child0➛Tax Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item.erp_line_number","label":"10 - For Each➛Purchase Order Line Record➛ERP line number","reference":"","reference_display":"ERP line number","type":"string","base_type":"string","parent_table_name":"sn_shop_purchase_order_line","column_name":"erp_line_number"},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.PO_ITEM","label":"11➛Item Data [ IT_POITEM ]_child0➛Item [ PO_ITEM ]","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item","label":"11 - For Each➛Item","reference_display":"Item","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__dont_treat_as_error__","label":"13 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__action_status__","label":"13 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.table_name","label":"13 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.record","label":"13 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item","label":"10 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.table_name","label":"5 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.record","label":"5 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9e419c60-1d17-4859-be9c-79715600a04f.item","label":"5 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__dont_treat_as_error__","label":"4 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__action_status__","label":"4 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Count","label":"4 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Table","label":"4 - Look Up Records➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Records","label":"4 - Look Up Records➛Purchase Order Line Records","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"53d97cb5-d3e0-4c58-861f-d4306be3ee48.context","label":"8 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"50978d24-edac-424a-9867-a99bfc92fbd2.context","label":"12 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"flow_variable.error_message","label":"Flow Variables➛Error Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ccbe1aa0-8345-4cb6-85a7-484fa067f9c5"}},{"name":"6a6769c6-b1a9-4740-b87d-723bea968f73.context","label":"14 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.context","label":"1 - Identify Target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.terget_erp","label":"1 - Identify Target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.status","label":"1 - Identify Target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"Created or Updated_1.current.legal_entity.erp_source","label":"Trigger - Record Created or Updated➛Purchase Order Record➛Legal entity➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_fin_legal_entity","column_name":"erp_source"},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.context","label":"4 - Create purchase order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.status","label":"4 - Create purchase order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.error_message","label":"4 - Create purchase order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.erp_number","label":"4➛ERP Purchase Order Number","reference_display":"ERP Purchase Order Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cf73aa4e-0ffa-4aa2-9209-8389e8f16292"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{}},{"name":"flow_variable.status","label":"Flow Variables➛Status","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5cc6546d-d6c6-4866-afaa-0768937d6346"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.record","label":"10 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.table_name","label":"10 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.erp_number","label":"Flow Variables➛ERP Number","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"07653b5e-f398-4942-aa47-c914ef3f07e0"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.record","label":"9 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.table_name","label":"9 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__action_status__","label":"9 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__dont_treat_as_error__","label":"9 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.context","label":"10 - Create purchase order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.erp_number","label":"10 - Create purchase order in SAP S4Hana➛ERP Number","reference_display":"ERP Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"50c275f4-0784-4956-9953-739f8f742a45"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.status","label":"10 - Create purchase order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"03e9a0a2-a778-4d80-9928-d1dff9fef114"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.error_message","label":"10 - Create purchase order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"239ef0c6-a93d-4979-b8f8-79b2e9d6765b"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.record","label":"4 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.table_name","label":"4 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.context","label":"1 - Identify target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp","label":"1 - Identify target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.status","label":"1 - Identify target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"1ed91590-70af-430e-b5ca-4fefa70e04a5.context","label":"6 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"a9036c45-5419-4943-8cce-c04ebf28013c.context","label":"15 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias","label":"1 - Identify target ERP➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"142bea5c-a7d8-4fd9-b88d-7da3ce84c693"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.ERP_Line_Data","label":"4➛ERP_Line_Data","reference_display":"ERP_Line_Data","type":"array.object","base_type":"array.object","attributes":{"pwd2droppable":"true","child_name":"item_data_it_poitem_child0","uiUniqueId":"380f6666-00e3-4c8e-a2e7-bcdb29b6ec8b","uiTypeLabel":"Array.Object","co_type_name":"FDf055dc6caf239110725ed9eedb373f32","child_label":"Item Data [ IT_POITEM ]_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"action","uiType":"array.object","child_type":"object","child_uiUniqueId":"32aae5e8-222c-4f69-880b-5094acba42f3"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.state","label":"7 - Call a Workflow➛State","reference_display":"State","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.context","label":"7 - Call a Workflow➛Context","reference":"wf_context","reference_display":"Workflow context","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.result","label":"7 - Call a Workflow➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.returnval","label":"7 - Call a Workflow➛Return Value","reference_display":"Return Value","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"80f95fc5-3ab4-4f88-8d5a-641f3378040e.context","label":"12 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"5279e66c-bbc9-4b21-9e0e-ed4195d3bfdf.context","label":"14 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <label_cache>[{"name":"5279e66c-bbc9-4b21-9e0e-ed4195d3bfdf.context","label":"14 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"80f95fc5-3ab4-4f88-8d5a-641f3378040e.context","label":"12 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.returnval","label":"7 - Call a Workflow➛Return Value","reference_display":"Return Value","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.result","label":"7 - Call a Workflow➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.context","label":"7 - Call a Workflow➛Context","reference":"wf_context","reference_display":"Workflow context","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.state","label":"7 - Call a Workflow➛State","reference_display":"State","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.ERP_Line_Data","label":"4➛ERP_Line_Data","reference_display":"ERP_Line_Data","type":"array.object","base_type":"array.object","attributes":{"pwd2droppable":"true","child_name":"item_data_it_poitem_child0","uiUniqueId":"380f6666-00e3-4c8e-a2e7-bcdb29b6ec8b","uiTypeLabel":"Array.Object","co_type_name":"FDf055dc6caf239110725ed9eedb373f32","child_label":"Item Data [ IT_POITEM ]_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"action","uiType":"array.object","child_type":"object","child_uiUniqueId":"32aae5e8-222c-4f69-880b-5094acba42f3"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias","label":"1 - Identify target ERP➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"142bea5c-a7d8-4fd9-b88d-7da3ce84c693"}},{"name":"a9036c45-5419-4943-8cce-c04ebf28013c.context","label":"15 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"1ed91590-70af-430e-b5ca-4fefa70e04a5.context","label":"6 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.status","label":"1 - Identify target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp","label":"1 - Identify target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.context","label":"1 - Identify target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.table_name","label":"4 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.record","label":"4 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.error_message","label":"10 - Create purchase order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"239ef0c6-a93d-4979-b8f8-79b2e9d6765b"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.status","label":"10 - Create purchase order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"03e9a0a2-a778-4d80-9928-d1dff9fef114"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.erp_number","label":"10 - Create purchase order in SAP S4Hana➛ERP Number","reference_display":"ERP Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"50c275f4-0784-4956-9953-739f8f742a45"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.context","label":"10 - Create purchase order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__dont_treat_as_error__","label":"9 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__action_status__","label":"9 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.table_name","label":"9 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.record","label":"9 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.erp_number","label":"Flow Variables➛ERP Number","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"07653b5e-f398-4942-aa47-c914ef3f07e0"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.table_name","label":"10 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.record","label":"10 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.status","label":"Flow Variables➛Status","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5cc6546d-d6c6-4866-afaa-0768937d6346"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.erp_number","label":"4➛ERP Purchase Order Number","reference_display":"ERP Purchase Order Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cf73aa4e-0ffa-4aa2-9209-8389e8f16292"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.error_message","label":"4 - Create purchase order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.status","label":"4 - Create purchase order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.context","label":"4 - Create purchase order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current.legal_entity.erp_source","label":"Trigger - Record Created or Updated➛Purchase Order Record➛Legal entity➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_fin_legal_entity","column_name":"erp_source"},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.status","label":"1 - Identify Target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.terget_erp","label":"1 - Identify Target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.context","label":"1 - Identify Target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"6a6769c6-b1a9-4740-b87d-723bea968f73.context","label":"14 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"flow_variable.error_message","label":"Flow Variables➛Error Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ccbe1aa0-8345-4cb6-85a7-484fa067f9c5"}},{"name":"50978d24-edac-424a-9867-a99bfc92fbd2.context","label":"12 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"53d97cb5-d3e0-4c58-861f-d4306be3ee48.context","label":"8 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Records","label":"4 - Look Up Records➛Purchase Order Line Records","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Table","label":"4 - Look Up Records➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Count","label":"4 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__action_status__","label":"4 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__dont_treat_as_error__","label":"4 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9e419c60-1d17-4859-be9c-79715600a04f.item","label":"5 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.record","label":"5 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.table_name","label":"5 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item","label":"10 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.record","label":"13 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.table_name","label":"13 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__action_status__","label":"13 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__dont_treat_as_error__","label":"13 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item","label":"11 - For Each➛Item","reference_display":"Item","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.PO_ITEM","label":"11➛Item Data [ IT_POITEM ]_child0➛Item [ PO_ITEM ]","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item.erp_line_number","label":"10 - For Each➛Purchase Order Line Record➛ERP line number","reference":"","reference_display":"ERP line number","type":"string","base_type":"string","parent_table_name":"sn_shop_purchase_order_line","column_name":"erp_line_number"},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.TAX_CODE","label":"11➛Item Data [ IT_POITEM ]_child0➛Tax Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"6d24684e-5dfe-4e4f-a6c0-a6606c7a23f5.item","label":"17 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.record","label":"18 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.table_name","label":"18 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__action_status__","label":"18 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__dont_treat_as_error__","label":"18 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.error_message","label":"1 - Identify target ERP➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"baeb27ab-84b2-44ed-863a-994e0849dec4"}}]</label_cache>
         <master_snapshot>cfb1a830479b1110eac25bf3836d432a</master_snapshot>
-        <name>Create purchase order in ERP</name>
+        <name>Create Purchase Order in ERP</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
-        <remote_trigger_id>e960a0db8775e950c04eb259dabb3587</remote_trigger_id>
+        <remote_trigger_id>dc1efbc1871ead10c04eb259dabb35c2</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
@@ -30,14 +30,14 @@
         <sys_domain_path>/</sys_domain_path>
         <sys_id>59885c7c47d71110eac25bf3836d43b0</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Create purchase order in ERP</sys_name>
+        <sys_name>Create Purchase Order in ERP</sys_name>
         <sys_overrides/>
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_hub_flow_59885c7c47d71110eac25bf3836d43b0</sys_update_name>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-03-31 10:04:46</sys_updated_on>
+        <sys_updated_on>2023-04-18 06:15:25</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=59885c7c47d71110eac25bf3836d43b0"/>
@@ -55,57 +55,57 @@
         <run_when_user_list/>
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2023-03-30 16:37:04</sys_created_on>
+        <sys_created_by>satyasagar.palivela@snc</sys_created_by>
+        <sys_created_on>2023-04-18 05:30:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>e960a0db8775e950c04eb259dabb3587</sys_id>
+        <sys_id>dc1efbc1871ead10c04eb259dabb35c2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_overrides/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:04</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:36</sys_updated_on>
         <table>sn_shop_purchase_order</table>
     </sys_flow_record_trigger>
     <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
         <active>true</active>
-        <data>{"table":"sys_trigger_runner_mapping","id":"a560a0db8775e950c04eb259dabb3588","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <data>{"table":"sys_trigger_runner_mapping","id":"581efbc1871ead10c04eb259dabb35c3","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
         <identifier>59885c7c47d71110eac25bf3836d43b0</identifier>
         <runner>FDTriggerRunner</runner>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2023-03-30 16:37:04</sys_created_on>
-        <sys_id>a560a0db8775e950c04eb259dabb3588</sys_id>
+        <sys_created_by>satyasagar.palivela@snc</sys_created_by>
+        <sys_created_on>2023-04-18 05:30:36</sys_created_on>
+        <sys_id>581efbc1871ead10c04eb259dabb35c3</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:04</sys_updated_on>
-        <trigger display_value="">e960a0db8775e950c04eb259dabb3587</trigger>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:36</sys_updated_on>
+        <trigger display_value="">dc1efbc1871ead10c04eb259dabb35c2</trigger>
     </sys_trigger_runner_mapping>
     <sys_json_chunk action="INSERT_OR_UPDATE">
         <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
-        <document_id>a560a0db8775e950c04eb259dabb3588</document_id>
+        <document_id>581efbc1871ead10c04eb259dabb35c3</document_id>
         <field>trigger_runner</field>
         <length>144</length>
         <position>0</position>
         <source_table>sys_trigger_runner_mapping</source_table>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2023-03-30 16:37:04</sys_created_on>
-        <sys_id>6d60a0db8775e950c04eb259dabb3588</sys_id>
+        <sys_created_by>satyasagar.palivela@snc</sys_created_by>
+        <sys_created_on>2023-04-18 05:30:36</sys_created_on>
+        <sys_id>101efbc1871ead10c04eb259dabb35c4</sys_id>
     </sys_json_chunk>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=59885c7c47d71110eac25bf3836d43b0^sys_idNOT INa560a0db8775e950c04eb259dabb3588"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=59885c7c47d71110eac25bf3836d43b0^sys_idNOT IN581efbc1871ead10c04eb259dabb35c3"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=59885c7c47d71110eac25bf3836d43b0^sys_idNOT INb2989c7c47d71110eac25bf3836d43d2"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <name>Created or Updated</name>
         <remote_sys_id/>
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:01:14</sys_created_on>
         <sys_id>b2989c7c47d71110eac25bf3836d43d2</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_scope/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:04</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:37</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -210,7 +210,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</model>
+        <model display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</model>
         <model_id>59885c7c47d71110eac25bf3836d43b0</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_59885c7c47d71110eac25bf3836d43b0</name>
@@ -233,14 +233,14 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:00:53</sys_created_on>
         <sys_id>21885c7c47d71110eac25bf3836d43d4</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:04</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:37</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -248,7 +248,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -293,7 +293,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</model>
+        <model display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</model>
         <model_id>59885c7c47d71110eac25bf3836d43b0</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_59885c7c47d71110eac25bf3836d43b0</name>
@@ -316,14 +316,14 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:00:53</sys_created_on>
         <sys_id>21885c7c47d71110eac25bf3836d43d8</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:04</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:37</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -331,7 +331,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -376,7 +376,7 @@
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</model>
+        <model display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</model>
         <model_id>59885c7c47d71110eac25bf3836d43b0</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_59885c7c47d71110eac25bf3836d43b0</name>
@@ -414,7 +414,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -426,21 +426,21 @@
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <inputs/>
         <inputs/>
         <order>6</order>
         <parent_ui_id>04aa3f8d-e10c-4b5e-920d-f8aa30bb3e09</parent_ui_id>
-        <subflow display_value="Purchase order error handling">f472103847d71110eac25bf3836d430a</subflow>
+        <subflow display_value="Purchase Order Error Handling">f472103847d71110eac25bf3836d430a</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:09:02</sys_created_on>
         <sys_id>0d6ad0b8471b1110eac25bf3836d4344</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:05</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:37</sys_updated_on>
         <ui_id>1ed91590-70af-430e-b5ca-4fefa70e04a5</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0d6ad0b8471b1110eac25bf3836d4344"/>
@@ -603,7 +603,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -612,21 +612,21 @@
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <inputs/>
         <inputs/>
         <order>12</order>
         <parent_ui_id>6a753fc9-2c52-4582-a369-a72ac35eb73e</parent_ui_id>
-        <subflow display_value="Purchase order error handling">f472103847d71110eac25bf3836d430a</subflow>
+        <subflow display_value="Purchase Order Error Handling">f472103847d71110eac25bf3836d430a</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-23 06:17:20</sys_created_on>
         <sys_id>21507a7b87f31d10c04eb259dabb35f4</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:05</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:38</sys_updated_on>
         <ui_id>80f95fc5-3ab4-4f88-8d5a-641f3378040e</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=21507a7b87f31d10c04eb259dabb35f4"/>
@@ -763,7 +763,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -772,21 +772,21 @@
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <inputs/>
         <inputs/>
         <order>8</order>
         <parent_ui_id>a5cd5f79-d158-495a-87b0-e49ded52dc36</parent_ui_id>
-        <subflow display_value="Purchase order error handling">f472103847d71110eac25bf3836d430a</subflow>
+        <subflow display_value="Purchase Order Error Handling">f472103847d71110eac25bf3836d430a</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-01 05:49:18</sys_created_on>
         <sys_id>2cf69df08727d1102a18b846dabb3594</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:05</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:38</sys_updated_on>
         <ui_id>53d97cb5-d3e0-4c58-861f-d4306be3ee48</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2cf69df08727d1102a18b846dabb3594"/>
@@ -909,7 +909,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -931,20 +931,21 @@
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <inputs/>
         <inputs/>
         <order>10</order>
         <parent_ui_id>e3368677-a57b-4fe9-b681-20a633e7760d</parent_ui_id>
-        <subflow display_value="">057d582887ee59102a18b846dabb35db</subflow>
+        <subflow display_value="Create purchase order in SAP S4Hana">057d582887ee59102a18b846dabb35db</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:01:15</sys_created_on>
         <sys_id>4798dc7c47d71110eac25bf3836d4381</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:05</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:38</sys_updated_on>
         <ui_id>fa2a00a2-d108-4d5d-a999-16421e6d0508</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4798dc7c47d71110eac25bf3836d4381"/>
@@ -962,6 +963,31 @@
         <value>1</value>
         <variable display_value="wait_for_completion">0398dc7c47d71110eac25bf3836d4382</variable>
     </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4798dc7c47d71110eac25bf3836d4381"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_credential_alias</field>
+        <id>4798dc7c47d71110eac25bf3836d4381</id>
+        <sys_created_by>satya</sys_created_by>
+        <sys_created_on>2023-03-30 16:36:53</sys_created_on>
+        <sys_id>0f50ac9b8775e950c04eb259dabb35e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>satya</sys_updated_by>
+        <sys_updated_on>2023-03-30 16:36:53</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_057d582887ee59102a18b846dabb35db</table>
+        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>psm_po</field>
+        <id>4798dc7c47d71110eac25bf3836d4381</id>
+        <sys_created_by>satyasagar.palivela@snc</sys_created_by>
+        <sys_created_on>2022-11-18 15:01:15</sys_created_on>
+        <sys_id>4398dc7c47d71110eac25bf3836d438d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2022-11-18 15:01:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_057d582887ee59102a18b846dabb35db</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_4798dc7c47d71110eac25bf3836d4381^id=4798dc7c47d71110eac25bf3836d4381"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=4798dc7c47d71110eac25bf3836d4381^sys_idNOT IN0398dc7c47d71110eac25bf3836d4382"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -1042,7 +1068,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1051,7 +1077,7 @@
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <inputs/>
         <inputs/>
         <order>1</order>
@@ -1062,10 +1088,10 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:08:58</sys_created_on>
         <sys_id>946a50b8471b1110eac25bf3836d43d8</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:05</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:37</sys_updated_on>
         <ui_id>054f93ce-fb40-4b9e-98db-db1ee4e301a9</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=946a50b8471b1110eac25bf3836d43d8"/>
@@ -1176,7 +1202,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1185,21 +1211,21 @@
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <inputs/>
         <inputs/>
         <order>14</order>
         <parent_ui_id>e4c14724-8d18-4116-ba1d-7d9f2257b64c</parent_ui_id>
-        <subflow display_value="Purchase order error handling">f472103847d71110eac25bf3836d430a</subflow>
+        <subflow display_value="Purchase Order Error Handling">f472103847d71110eac25bf3836d430a</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-23 06:17:21</sys_created_on>
         <sys_id>c650ba7b87f31d10c04eb259dabb3524</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:06</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:38</sys_updated_on>
         <ui_id>5279e66c-bbc9-4b21-9e0e-ed4195d3bfdf</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c650ba7b87f31d10c04eb259dabb3524"/>
@@ -1322,7 +1348,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1344,20 +1370,21 @@
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <inputs/>
         <inputs/>
         <order>4</order>
         <parent_ui_id>e621f65c-b890-4c11-ad44-5847a1148f5c</parent_ui_id>
-        <subflow display_value="">34c66f48872e19102a18b846dabb35de</subflow>
+        <subflow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:01:14</sys_created_on>
         <sys_id>c798dc7c47d71110eac25bf3836d4374</sys_id>
-        <sys_mod_count>52</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:05</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:37</sys_updated_on>
         <ui_id>506a9808-e5b9-40dd-a2be-acd83e100439</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c798dc7c47d71110eac25bf3836d4374"/>
@@ -1375,6 +1402,31 @@
         <value>1</value>
         <variable display_value="wait_for_completion">8398dc7c47d71110eac25bf3836d4375</variable>
     </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c798dc7c47d71110eac25bf3836d4374"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_credential_alias</field>
+        <id>c798dc7c47d71110eac25bf3836d4374</id>
+        <sys_created_by>satya</sys_created_by>
+        <sys_created_on>2022-11-30 11:02:40</sys_created_on>
+        <sys_id>1d155d6c872791102a18b846dabb353c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>satya</sys_updated_by>
+        <sys_updated_on>2022-11-30 11:02:40</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_34c66f48872e19102a18b846dabb35de</table>
+        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>psm_po</field>
+        <id>c798dc7c47d71110eac25bf3836d4374</id>
+        <sys_created_by>satyasagar.palivela@snc</sys_created_by>
+        <sys_created_on>2022-11-18 15:01:15</sys_created_on>
+        <sys_id>c398dc7c47d71110eac25bf3836d4380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2022-11-18 15:01:15</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_34c66f48872e19102a18b846dabb35de</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_c798dc7c47d71110eac25bf3836d4374^id=c798dc7c47d71110eac25bf3836d4374"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=c798dc7c47d71110eac25bf3836d4374^sys_idNOT IN8398dc7c47d71110eac25bf3836d4375"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -1455,7 +1507,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1470,7 +1522,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1484,10 +1536,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-01 05:49:18</sys_created_on>
         <sys_id>24f69df08727d1102a18b846dabb3590</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:05</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:37</sys_updated_on>
         <ui_id>a5cd5f79-d158-495a-87b0-e49ded52dc36</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1542,7 +1594,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1556,10 +1608,10 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:00:53</sys_created_on>
         <sys_id>7d889c7c47d71110eac25bf3836d4313</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:05</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:38</sys_updated_on>
         <ui_id>e3368677-a57b-4fe9-b681-20a633e7760d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1586,11 +1638,11 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:00:53</sys_created_on>
         <sys_id>31889c7c47d71110eac25bf3836d4317</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2022-11-18 15:40:49</sys_updated_on>
+        <sys_updated_on>2023-04-18 05:30:25</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
-        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp}}=sap_hana</value>
+        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp}}=sn_sap_s4_hana_rfc</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition_name</field>
@@ -1614,7 +1666,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1628,10 +1680,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-01 05:49:17</sys_created_on>
         <sys_id>94f69df08727d1102a18b846dabb356f</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:05</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:37</sys_updated_on>
         <ui_id>04aa3f8d-e10c-4b5e-920d-f8aa30bb3e09</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1686,7 +1738,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1700,10 +1752,10 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:00:53</sys_created_on>
         <sys_id>b5885c7c47d71110eac25bf3836d43fa</sys_id>
-        <sys_mod_count>28</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:05</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:37</sys_updated_on>
         <ui_id>572b2353-3669-4bd5-b645-af7c9dd1c3e0</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1758,7 +1810,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1772,10 +1824,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-23 06:17:21</sys_created_on>
         <sys_id>ce50ba7b87f31d10c04eb259dabb351f</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:06</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:38</sys_updated_on>
         <ui_id>e4c14724-8d18-4116-ba1d-7d9f2257b64c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1830,7 +1882,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1844,10 +1896,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-23 06:17:20</sys_created_on>
         <sys_id>e1507a7b87f31d10c04eb259dabb35ef</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:05</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:38</sys_updated_on>
         <ui_id>6a753fc9-2c52-4582-a369-a72ac35eb73e</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1902,7 +1954,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
+        <flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1916,10 +1968,10 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:00:53</sys_created_on>
         <sys_id>f1885c7c47d71110eac25bf3836d43ff</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:05</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:37</sys_updated_on>
         <ui_id>e621f65c-b890-4c11-ad44-5847a1148f5c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1946,11 +1998,11 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:00:53</sys_created_on>
         <sys_id>79889c7c47d71110eac25bf3836d430e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 05:42:49</sys_updated_on>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:24</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp}}=sap_ecc</value>
+        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp}}=sn_sap_ecc_rfc_spo</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition_name</field>
@@ -2052,12 +2104,12 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8307d1348727d1102a18b846dabb3577</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:04</sys_updated_on>
-        <trigger display_value="">e960a0db8775e950c04eb259dabb3587</trigger>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:37</sys_updated_on>
+        <trigger display_value="">dc1efbc1871ead10c04eb259dabb35c2</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=59885c7c47d71110eac25bf3836d43b0"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
@@ -2071,12 +2123,12 @@
         <copied_from_name/>
         <description/>
         <internal_name>create_purchase_order_in_erp</internal_name>
-        <label_cache>[{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.error_message","label":"1 - Identify target ERP➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"baeb27ab-84b2-44ed-863a-994e0849dec4"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__dont_treat_as_error__","label":"18 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__action_status__","label":"18 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.table_name","label":"18 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.record","label":"18 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6d24684e-5dfe-4e4f-a6c0-a6606c7a23f5.item","label":"17 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.TAX_CODE","label":"11➛Item Data [ IT_POITEM ]_child0➛Tax Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item.erp_line_number","label":"10 - For Each➛Purchase Order Line Record➛ERP line number","reference":"","reference_display":"ERP line number","type":"string","base_type":"string","parent_table_name":"sn_shop_purchase_order_line","column_name":"erp_line_number"},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.PO_ITEM","label":"11➛Item Data [ IT_POITEM ]_child0➛Item [ PO_ITEM ]","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item","label":"11 - For Each➛Item","reference_display":"Item","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__dont_treat_as_error__","label":"13 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__action_status__","label":"13 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.table_name","label":"13 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.record","label":"13 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item","label":"10 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.table_name","label":"5 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.record","label":"5 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9e419c60-1d17-4859-be9c-79715600a04f.item","label":"5 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__dont_treat_as_error__","label":"4 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__action_status__","label":"4 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Count","label":"4 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Table","label":"4 - Look Up Records➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Records","label":"4 - Look Up Records➛Purchase Order Line Records","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"53d97cb5-d3e0-4c58-861f-d4306be3ee48.context","label":"8 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"50978d24-edac-424a-9867-a99bfc92fbd2.context","label":"12 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"flow_variable.error_message","label":"Flow Variables➛Error Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ccbe1aa0-8345-4cb6-85a7-484fa067f9c5"}},{"name":"6a6769c6-b1a9-4740-b87d-723bea968f73.context","label":"14 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.context","label":"1 - Identify Target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.terget_erp","label":"1 - Identify Target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.status","label":"1 - Identify Target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"Created or Updated_1.current.legal_entity.erp_source","label":"Trigger - Record Created or Updated➛Purchase Order Record➛Legal entity➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_fin_legal_entity","column_name":"erp_source"},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.context","label":"4 - Create purchase order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.status","label":"4 - Create purchase order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.error_message","label":"4 - Create purchase order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.erp_number","label":"4➛ERP Purchase Order Number","reference_display":"ERP Purchase Order Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cf73aa4e-0ffa-4aa2-9209-8389e8f16292"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{}},{"name":"flow_variable.status","label":"Flow Variables➛Status","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5cc6546d-d6c6-4866-afaa-0768937d6346"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.record","label":"10 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.table_name","label":"10 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.erp_number","label":"Flow Variables➛ERP Number","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"07653b5e-f398-4942-aa47-c914ef3f07e0"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.record","label":"9 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.table_name","label":"9 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__action_status__","label":"9 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__dont_treat_as_error__","label":"9 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.context","label":"10 - Create purchase order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.erp_number","label":"10 - Create purchase order in SAP S4Hana➛ERP Number","reference_display":"ERP Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"50c275f4-0784-4956-9953-739f8f742a45"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.status","label":"10 - Create purchase order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"03e9a0a2-a778-4d80-9928-d1dff9fef114"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.error_message","label":"10 - Create purchase order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"239ef0c6-a93d-4979-b8f8-79b2e9d6765b"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.record","label":"4 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.table_name","label":"4 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.context","label":"1 - Identify target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp","label":"1 - Identify target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.status","label":"1 - Identify target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"1ed91590-70af-430e-b5ca-4fefa70e04a5.context","label":"6 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"a9036c45-5419-4943-8cce-c04ebf28013c.context","label":"15 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias","label":"1 - Identify target ERP➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"142bea5c-a7d8-4fd9-b88d-7da3ce84c693"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.ERP_Line_Data","label":"4➛ERP_Line_Data","reference_display":"ERP_Line_Data","type":"array.object","base_type":"array.object","attributes":{"pwd2droppable":"true","child_name":"item_data_it_poitem_child0","uiUniqueId":"380f6666-00e3-4c8e-a2e7-bcdb29b6ec8b","uiTypeLabel":"Array.Object","co_type_name":"FDf055dc6caf239110725ed9eedb373f32","child_label":"Item Data [ IT_POITEM ]_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"action","uiType":"array.object","child_type":"object","child_uiUniqueId":"32aae5e8-222c-4f69-880b-5094acba42f3"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.state","label":"7 - Call a Workflow➛State","reference_display":"State","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.context","label":"7 - Call a Workflow➛Context","reference":"wf_context","reference_display":"Workflow context","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.result","label":"7 - Call a Workflow➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.returnval","label":"7 - Call a Workflow➛Return Value","reference_display":"Return Value","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"80f95fc5-3ab4-4f88-8d5a-641f3378040e.context","label":"12 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"5279e66c-bbc9-4b21-9e0e-ed4195d3bfdf.context","label":"14 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <label_cache>[{"name":"5279e66c-bbc9-4b21-9e0e-ed4195d3bfdf.context","label":"14 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"80f95fc5-3ab4-4f88-8d5a-641f3378040e.context","label":"12 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.returnval","label":"7 - Call a Workflow➛Return Value","reference_display":"Return Value","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.result","label":"7 - Call a Workflow➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.context","label":"7 - Call a Workflow➛Context","reference":"wf_context","reference_display":"Workflow context","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"fabab8af-24e1-4576-9f39-6f2751e0bfdd.state","label":"7 - Call a Workflow➛State","reference_display":"State","type":"string","base_type":"string","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.ERP_Line_Data","label":"4➛ERP_Line_Data","reference_display":"ERP_Line_Data","type":"array.object","base_type":"array.object","attributes":{"pwd2droppable":"true","child_name":"item_data_it_poitem_child0","uiUniqueId":"380f6666-00e3-4c8e-a2e7-bcdb29b6ec8b","uiTypeLabel":"Array.Object","co_type_name":"FDf055dc6caf239110725ed9eedb373f32","child_label":"Item Data [ IT_POITEM ]_child0","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"action","uiType":"array.object","child_type":"object","child_uiUniqueId":"32aae5e8-222c-4f69-880b-5094acba42f3"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias","label":"1 - Identify target ERP➛Connection \u0026 Credential Alias","reference":"sys_alias","reference_display":"Connection \u0026 Credential Aliases","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"142bea5c-a7d8-4fd9-b88d-7da3ce84c693"}},{"name":"a9036c45-5419-4943-8cce-c04ebf28013c.context","label":"15 - Purchase order error handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"1ed91590-70af-430e-b5ca-4fefa70e04a5.context","label":"6 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.status","label":"1 - Identify target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp","label":"1 - Identify target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.context","label":"1 - Identify target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__dont_treat_as_error__","label":"4 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.__action_status__","label":"4 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.table_name","label":"4 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e93092cf-100b-4422-bac5-db17083bb1ef.record","label":"4 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.error_message","label":"10 - Create purchase order in SAP S4Hana➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"239ef0c6-a93d-4979-b8f8-79b2e9d6765b"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.status","label":"10 - Create purchase order in SAP S4Hana➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"03e9a0a2-a778-4d80-9928-d1dff9fef114"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.erp_number","label":"10 - Create purchase order in SAP S4Hana➛ERP Number","reference_display":"ERP Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"50c275f4-0784-4956-9953-739f8f742a45"}},{"name":"fa2a00a2-d108-4d5d-a999-16421e6d0508.context","label":"10 - Create purchase order in SAP S4Hana➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__dont_treat_as_error__","label":"9 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.__action_status__","label":"9 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.table_name","label":"9 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a51877c-2a56-4bee-9a4a-2ee293f36ed5.record","label":"9 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.erp_number","label":"Flow Variables➛ERP Number","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"07653b5e-f398-4942-aa47-c914ef3f07e0"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.table_name","label":"10 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"993d9b48-2d8e-44f8-a9a5-edde0cbd6e48.record","label":"10 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.status","label":"Flow Variables➛Status","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5cc6546d-d6c6-4866-afaa-0768937d6346"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.erp_number","label":"4➛ERP Purchase Order Number","reference_display":"ERP Purchase Order Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"cf73aa4e-0ffa-4aa2-9209-8389e8f16292"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.error_message","label":"4 - Create purchase order in SAP ECC➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"69eaed54-c55c-4584-b189-6b4324bad4d1"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.status","label":"4 - Create purchase order in SAP ECC➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5f2ee78f-4140-4a31-ad92-716c10d79b38"}},{"name":"506a9808-e5b9-40dd-a2be-acd83e100439.context","label":"4 - Create purchase order in SAP ECC➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"Created or Updated_1.current.legal_entity.erp_source","label":"Trigger - Record Created or Updated➛Purchase Order Record➛Legal entity➛ERP source","reference":"sn_fin_erp_source","reference_display":"ERP Source","type":"reference","base_type":"reference","parent_table_name":"sn_fin_legal_entity","column_name":"erp_source"},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.status","label":"1 - Identify Target ERP➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"Success","order":1.0},{"label":"Error","value":"Error","order":2.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5ad81bf4-e278-4a56-b949-549df067f19d"}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.terget_erp","label":"1 - Identify Target ERP➛Target ERP","reference_display":"Target ERP","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"627a1a79-66ab-4652-8815-99e9a55fe4a9"}},{"name":"ca0aeb0c-ec51-4c17-9fef-22f177dd52aa.context","label":"1 - Identify Target ERP➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"6a6769c6-b1a9-4740-b87d-723bea968f73.context","label":"14 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"flow_variable.error_message","label":"Flow Variables➛Error Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ccbe1aa0-8345-4cb6-85a7-484fa067f9c5"}},{"name":"50978d24-edac-424a-9867-a99bfc92fbd2.context","label":"12 - Create/Close ERP Purchase Order Error Task➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"53d97cb5-d3e0-4c58-861f-d4306be3ee48.context","label":"8 - Purchase Order Error Handling➛Context","reference":"sys_flow_context","reference_display":"Flow engine context","type":"reference","base_type":"reference","attributes":{}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Records","label":"4 - Look Up Records➛Purchase Order Line Records","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Table","label":"4 - Look Up Records➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.Count","label":"4 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__action_status__","label":"4 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"10c49ccc-8c62-448b-9c63-587b4a399bc5.__dont_treat_as_error__","label":"4 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9e419c60-1d17-4859-be9c-79715600a04f.item","label":"5 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.record","label":"5 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.table_name","label":"5 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"6e77ccff-4ece-4baf-9d9f-62c5fb14cff4.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item","label":"10 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.record","label":"13 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.table_name","label":"13 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__action_status__","label":"13 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9027508a-64d6-4330-a287-07da803dd62d.__dont_treat_as_error__","label":"13 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item","label":"11 - For Each➛Item","reference_display":"Item","type":"document_id","base_type":"document_id","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.PO_ITEM","label":"11➛Item Data [ IT_POITEM ]_child0➛Item [ PO_ITEM ]","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"9df0cc70-aa56-43bd-8d1c-5e3f6b9f0e51.item.erp_line_number","label":"10 - For Each➛Purchase Order Line Record➛ERP line number","reference":"","reference_display":"ERP line number","type":"string","base_type":"string","parent_table_name":"sn_shop_purchase_order_line","column_name":"erp_line_number"},{"name":"edc52409-cecd-4a19-b4bd-e6dfd52f2f8f.item.TAX_CODE","label":"11➛Item Data [ IT_POITEM ]_child0➛Tax Code","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"6d24684e-5dfe-4e4f-a6c0-a6606c7a23f5.item","label":"17 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.record","label":"18 - Update Record➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.table_name","label":"18 - Update Record➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__action_status__","label":"18 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"00b64345-40d5-4004-8f06-1e0d0b6ba7fa.__dont_treat_as_error__","label":"18 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"054f93ce-fb40-4b9e-98db-db1ee4e301a9.error_message","label":"1 - Identify target ERP➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"baeb27ab-84b2-44ed-863a-994e0849dec4"}}]</label_cache>
         <master>true</master>
-        <name>Create purchase order in ERP</name>
+        <name>Create Purchase Order in ERP</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="Create purchase order in ERP">59885c7c47d71110eac25bf3836d43b0</parent_flow>
+        <parent_flow display_value="Create Purchase Order in ERP">59885c7c47d71110eac25bf3836d43b0</parent_flow>
         <remote_trigger_id/>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -2088,15 +2140,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cfb1a830479b1110eac25bf3836d432a</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:02</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:34</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=cfb1a830479b1110eac25bf3836d432a"/>
@@ -2105,16 +2157,16 @@
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <name>Created or Updated</name>
         <remote_sys_id/>
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:41:28</sys_created_on>
         <sys_id>c8d1e830479b1110eac25bf3836d434c</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>35</sys_mod_count>
         <sys_scope/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:04</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:37</sys_updated_on>
         <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -2219,7 +2271,7 @@
         <label>Table Name</label>
         <mandatory>false</mandatory>
         <max_length>200</max_length>
-        <model display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</model>
+        <model display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</model>
         <model_id>cfb1a830479b1110eac25bf3836d432a</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_cfb1a830479b1110eac25bf3836d432a</name>
@@ -2242,14 +2294,14 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:41:07</sys_created_on>
         <sys_id>57b1a830479b1110eac25bf3836d4389</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:00</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:33</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2257,7 +2309,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2302,7 +2354,7 @@
         <label>Record</label>
         <mandatory>true</mandatory>
         <max_length>200</max_length>
-        <model display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</model>
+        <model display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</model>
         <model_id>cfb1a830479b1110eac25bf3836d432a</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_cfb1a830479b1110eac25bf3836d432a</name>
@@ -2325,14 +2377,14 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:41:07</sys_created_on>
         <sys_id>83b1a830479b1110eac25bf3836d4330</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:00</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:33</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2340,7 +2392,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2385,7 +2437,7 @@
         <label>Changed Fields</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</model>
+        <model display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</model>
         <model_id>cfb1a830479b1110eac25bf3836d432a</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_cfb1a830479b1110eac25bf3836d432a</name>
@@ -2423,7 +2475,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2435,20 +2487,21 @@
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <inputs/>
         <inputs/>
         <order>4</order>
         <parent_ui_id>e621f65c-b890-4c11-ad44-5847a1148f5c</parent_ui_id>
-        <subflow display_value="">34c66f48872e19102a18b846dabb35de</subflow>
+        <subflow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:41:28</sys_created_on>
         <sys_id>10d1e830479b1110eac25bf3836d43c5</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:01</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:33</sys_updated_on>
         <ui_id>506a9808-e5b9-40dd-a2be-acd83e100439</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=10d1e830479b1110eac25bf3836d43c5"/>
@@ -2466,6 +2519,31 @@
         <value>1</value>
         <variable display_value="wait_for_completion">d8d1e830479b1110eac25bf3836d43c5</variable>
     </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=10d1e830479b1110eac25bf3836d43c5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_credential_alias</field>
+        <id>10d1e830479b1110eac25bf3836d43c5</id>
+        <sys_created_by>satya</sys_created_by>
+        <sys_created_on>2022-12-01 05:49:34</sys_created_on>
+        <sys_id>600751348727d1102a18b846dabb359f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>satya</sys_updated_by>
+        <sys_updated_on>2022-12-01 05:49:34</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_34c66f48872e19102a18b846dabb35de</table>
+        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>psm_po</field>
+        <id>10d1e830479b1110eac25bf3836d43c5</id>
+        <sys_created_by>satyasagar.palivela@snc</sys_created_by>
+        <sys_created_on>2022-11-18 15:41:29</sys_created_on>
+        <sys_id>d0d1e830479b1110eac25bf3836d43dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2022-11-18 15:41:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_34c66f48872e19102a18b846dabb35de</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_10d1e830479b1110eac25bf3836d43c5^id=10d1e830479b1110eac25bf3836d43c5"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=10d1e830479b1110eac25bf3836d43c5^sys_idNOT INd8d1e830479b1110eac25bf3836d43c5"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -2546,7 +2624,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2555,21 +2633,21 @@
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <inputs/>
         <inputs/>
         <order>14</order>
         <parent_ui_id>e4c14724-8d18-4116-ba1d-7d9f2257b64c</parent_ui_id>
-        <subflow display_value="Purchase order error handling">f472103847d71110eac25bf3836d430a</subflow>
+        <subflow display_value="Purchase Order Error Handling">f472103847d71110eac25bf3836d430a</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-23 06:17:37</sys_created_on>
         <sys_id>31607e7b87f31d10c04eb259dabb3550</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:02</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:34</sys_updated_on>
         <ui_id>5279e66c-bbc9-4b21-9e0e-ed4195d3bfdf</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=31607e7b87f31d10c04eb259dabb3550"/>
@@ -2692,7 +2770,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2714,21 +2792,21 @@
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <inputs/>
         <inputs/>
         <order>12</order>
         <parent_ui_id>6a753fc9-2c52-4582-a369-a72ac35eb73e</parent_ui_id>
-        <subflow display_value="Purchase order error handling">f472103847d71110eac25bf3836d430a</subflow>
+        <subflow display_value="Purchase Order Error Handling">f472103847d71110eac25bf3836d430a</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-23 06:17:37</sys_created_on>
         <sys_id>35607e7b87f31d10c04eb259dabb3543</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:01</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:34</sys_updated_on>
         <ui_id>80f95fc5-3ab4-4f88-8d5a-641f3378040e</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=35607e7b87f31d10c04eb259dabb3543"/>
@@ -2865,7 +2943,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2874,20 +2952,21 @@
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <inputs/>
         <inputs/>
         <order>10</order>
         <parent_ui_id>e3368677-a57b-4fe9-b681-20a633e7760d</parent_ui_id>
-        <subflow display_value="">057d582887ee59102a18b846dabb35db</subflow>
+        <subflow display_value="Create purchase order in SAP S4Hana">057d582887ee59102a18b846dabb35db</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:41:29</sys_created_on>
         <sys_id>54d1e830479b1110eac25bf3836d43de</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:01</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:34</sys_updated_on>
         <ui_id>fa2a00a2-d108-4d5d-a999-16421e6d0508</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=54d1e830479b1110eac25bf3836d43de"/>
@@ -2905,6 +2984,31 @@
         <value>1</value>
         <variable display_value="wait_for_completion">10d1e830479b1110eac25bf3836d43df</variable>
     </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=54d1e830479b1110eac25bf3836d43de"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_credential_alias</field>
+        <id>54d1e830479b1110eac25bf3836d43de</id>
+        <sys_created_by>satya</sys_created_by>
+        <sys_created_on>2023-03-30 16:37:00</sys_created_on>
+        <sys_id>206060db8775e950c04eb259dabb3529</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>satya</sys_updated_by>
+        <sys_updated_on>2023-03-30 16:37:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_057d582887ee59102a18b846dabb35db</table>
+        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.conn_alias}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>psm_po</field>
+        <id>54d1e830479b1110eac25bf3836d43de</id>
+        <sys_created_by>satyasagar.palivela@snc</sys_created_by>
+        <sys_created_on>2022-11-18 15:41:29</sys_created_on>
+        <sys_id>60d1e830479b1110eac25bf3836d43ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2022-11-18 15:41:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_057d582887ee59102a18b846dabb35db</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_54d1e830479b1110eac25bf3836d43de^id=54d1e830479b1110eac25bf3836d43de"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=54d1e830479b1110eac25bf3836d43de^sys_idNOT IN10d1e830479b1110eac25bf3836d43df"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -2985,7 +3089,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2994,7 +3098,7 @@
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <inputs/>
         <inputs/>
         <order>1</order>
@@ -3005,10 +3109,10 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:41:28</sys_created_on>
         <sys_id>58d1e830479b1110eac25bf3836d43b2</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:00</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:33</sys_updated_on>
         <ui_id>054f93ce-fb40-4b9e-98db-db1ee4e301a9</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=58d1e830479b1110eac25bf3836d43b2"/>
@@ -3119,7 +3223,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3128,21 +3232,21 @@
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <inputs/>
         <inputs/>
         <order>8</order>
         <parent_ui_id>a5cd5f79-d158-495a-87b0-e49ded52dc36</parent_ui_id>
-        <subflow display_value="Purchase order error handling">f472103847d71110eac25bf3836d430a</subflow>
+        <subflow display_value="Purchase Order Error Handling">f472103847d71110eac25bf3836d430a</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-01 05:49:34</sys_created_on>
         <sys_id>e00751348727d1102a18b846dabb35aa</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:01</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:33</sys_updated_on>
         <ui_id>53d97cb5-d3e0-4c58-861f-d4306be3ee48</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e00751348727d1102a18b846dabb35aa"/>
@@ -3265,7 +3369,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3287,21 +3391,21 @@
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <inputs/>
         <inputs/>
         <order>6</order>
         <parent_ui_id>04aa3f8d-e10c-4b5e-920d-f8aa30bb3e09</parent_ui_id>
-        <subflow display_value="Purchase order error handling">f472103847d71110eac25bf3836d430a</subflow>
+        <subflow display_value="Purchase Order Error Handling">f472103847d71110eac25bf3836d430a</subflow>
         <subflow_instance_inputs/>
         <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:41:29</sys_created_on>
         <sys_id>e0d1e830479b1110eac25bf3836d43eb</sys_id>
-        <sys_mod_count>38</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:01</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:33</sys_updated_on>
         <ui_id>1ed91590-70af-430e-b5ca-4fefa70e04a5</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e0d1e830479b1110eac25bf3836d43eb"/>
@@ -3438,7 +3542,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3453,7 +3557,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3467,10 +3571,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-23 06:17:36</sys_created_on>
         <sys_id>2d603e7b87f31d10c04eb259dabb35c7</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:02</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:34</sys_updated_on>
         <ui_id>e4c14724-8d18-4116-ba1d-7d9f2257b64c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3525,7 +3629,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3539,10 +3643,10 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:41:08</sys_created_on>
         <sys_id>5fb1a830479b1110eac25bf3836d43b2</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:01</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:33</sys_updated_on>
         <ui_id>572b2353-3669-4bd5-b645-af7c9dd1c3e0</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3597,7 +3701,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3611,10 +3715,10 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:41:08</sys_created_on>
         <sys_id>93b1a830479b1110eac25bf3836d43b7</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:01</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:33</sys_updated_on>
         <ui_id>e621f65c-b890-4c11-ad44-5847a1148f5c</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3641,11 +3745,11 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:41:08</sys_created_on>
         <sys_id>1bb1a830479b1110eac25bf3836d43c6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-12-23 06:17:35</sys_updated_on>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:32</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
-        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp}}=sap_ecc</value>
+        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp}}=sn_sap_ecc_rfc_spo</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition_name</field>
@@ -3669,7 +3773,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3683,10 +3787,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-01 05:49:33</sys_created_on>
         <sys_id>980751348727d1102a18b846dabb3570</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:01</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:33</sys_updated_on>
         <ui_id>04aa3f8d-e10c-4b5e-920d-f8aa30bb3e09</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3741,7 +3845,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3755,10 +3859,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-01 05:49:34</sys_created_on>
         <sys_id>9c0751348727d1102a18b846dabb357c</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:01</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:33</sys_updated_on>
         <ui_id>a5cd5f79-d158-495a-87b0-e49ded52dc36</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3813,7 +3917,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3827,10 +3931,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-12-23 06:17:36</sys_created_on>
         <sys_id>a5603e7b87f31d10c04eb259dabb35c4</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:01</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:34</sys_updated_on>
         <ui_id>6a753fc9-2c52-4582-a369-a72ac35eb73e</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3885,7 +3989,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Create purchase order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
+        <flow display_value="Create Purchase Order in ERP">cfb1a830479b1110eac25bf3836d432a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3899,10 +4003,10 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:41:08</sys_created_on>
         <sys_id>dfb1a830479b1110eac25bf3836d43cb</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-03-30 16:37:01</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2023-04-18 05:30:34</sys_updated_on>
         <ui_id>e3368677-a57b-4fe9-b681-20a633e7760d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3929,11 +4033,11 @@
         <sys_created_by>satyasagar.palivela@snc</sys_created_by>
         <sys_created_on>2022-11-18 15:41:08</sys_created_on>
         <sys_id>d3b1a830479b1110eac25bf3836d43cf</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2022-11-18 15:41:08</sys_updated_on>
+        <sys_updated_on>2023-04-18 05:30:32</sys_updated_on>
         <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
-        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp}}=sap_hana</value>
+        <value>{{054f93ce-fb40-4b9e-98db-db1ee4e301a9.terget_erp}}=sn_sap_s4_hana_rfc</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>condition_name</field>

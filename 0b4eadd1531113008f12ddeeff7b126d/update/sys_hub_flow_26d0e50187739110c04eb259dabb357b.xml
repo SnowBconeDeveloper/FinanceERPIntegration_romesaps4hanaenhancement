@@ -10,9 +10,9 @@
         <copied_from_name/>
         <description/>
         <internal_name>invoice_receipt_error_handling</internal_name>
-        <label_cache>[{"name":"subflow.psm_ir.purchase_order.purchase_requisition.assigned_to","label":"Input➛PSM IR➛Purchase order➛Purchase requisition➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_requisition","column_name":"assigned_to"},{"name":"subflow.psm_ir.sys_created_by","label":"Input➛PSM IR➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice","column_name":"sys_created_by"},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__dont_treat_as_error__","label":"16 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__action_status__","label":"16 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.table_name","label":"16 - Create Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.record","label":"16 - Create Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.ir_exist","label":"Flow Variables➛IR Exist","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1f1a8380-203f-4201-aa6e-3b0b2be4e097"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__dont_treat_as_error__","label":"14 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__action_status__","label":"14 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.table_name","label":"14 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.record","label":"14 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.table_name","label":"11 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.record","label":"11 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.state","label":"8 - For Each➛Integration Error Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sn_shop_erp_error_task","column_name":"state","choices":[{"used":false,"reference":false,"label":"Pending","rawLabel":"Pending","missing":false,"image":"","selected":false,"value":"-5","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Open","rawLabel":"Open","missing":false,"image":"","selected":false,"value":"1","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Work in Progress","rawLabel":"Work in Progress","missing":false,"image":"","selected":false,"value":"2","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Closed Complete","rawLabel":"Closed Complete","missing":false,"image":"","selected":false,"value":"3","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Closed Canceled","rawLabel":"Closed Canceled","missing":false,"image":"","selected":false,"value":"10","parameters":{"name":"sn_shop_task"}}]},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.description","label":"8 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_erp_error_task","column_name":"description"},{"name":"subflow.error_message","label":"Input➛Error Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"11d1d11f-d75b-4c11-ab0b-a346caf502d3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item.description","label":"4 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice_task","column_name":"description"},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item","label":"8 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Records","label":"1 - Look Up Records➛Integration Error Records","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Table","label":"1 - Look Up Records➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir","label":"Input➛PSM IR","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"58d56e93-33e2-4ae6-8a99-1959aa5a1b26","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.status","label":"Input➛Status","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Error","value":"Error","order":0.0},{"label":"Success","value":"Success","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"015c1cde-792c-4f28-9f99-175b344d5efc","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item","label":"4 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.record","label":"5 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.table_name","label":"5 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir.purchase_order.purchase_requisition","label":"Input➛PSM IR➛Purchase order➛Purchase requisition","reference":"sn_shop_purchase_requisition","reference_display":"Purchase Requisition","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order","column_name":"purchase_requisition"},{"name":"subflow.psm_ir.purchase_order","label":"Input➛PSM IR➛Purchase order","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","parent_table_name":"sn_shop_invoice","column_name":"purchase_order"},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.record","label":"17 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.table_name","label":"17 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__action_status__","label":"17 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__dont_treat_as_error__","label":"17 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
+        <label_cache>[{"name":"subflow.psm_ir.purchase_order.purchase_requisition.assigned_to","label":"Input➛PSM IR➛Purchase order➛Purchase requisition➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_requisition","column_name":"assigned_to"},{"name":"subflow.psm_ir.sys_created_by","label":"Input➛PSM IR➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice","column_name":"sys_created_by"},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__dont_treat_as_error__","label":"16 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__action_status__","label":"16 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.table_name","label":"16 - Create Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.record","label":"16 - Create Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.ir_exist","label":"Flow Variables➛IR Exist","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1f1a8380-203f-4201-aa6e-3b0b2be4e097"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__dont_treat_as_error__","label":"14 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__action_status__","label":"14 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.table_name","label":"14 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.record","label":"14 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.table_name","label":"11 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.record","label":"11 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.state","label":"8 - For Each➛Integration Error Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sn_shop_erp_error_task","column_name":"state","choices":[{"label":"Pending","used":false,"rawLabel":"Pending","selected":false,"missing":false,"reference":false,"image":"","value":"-5","parameters":{"name":"sn_shop_task"}},{"label":"Open","used":false,"rawLabel":"Open","selected":false,"missing":false,"reference":false,"image":"","value":"1","parameters":{"name":"sn_shop_task"}},{"label":"Work in Progress","used":false,"rawLabel":"Work in Progress","selected":false,"missing":false,"reference":false,"image":"","value":"2","parameters":{"name":"sn_shop_task"}},{"label":"Closed Complete","used":false,"rawLabel":"Closed Complete","selected":false,"missing":false,"reference":false,"image":"","value":"3","parameters":{"name":"sn_shop_task"}},{"label":"Closed Canceled","used":false,"rawLabel":"Closed Canceled","selected":false,"missing":false,"reference":false,"image":"","value":"10","parameters":{"name":"sn_shop_task"}}]},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.description","label":"8 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_erp_error_task","column_name":"description"},{"name":"subflow.error_message","label":"Input➛Error Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"11d1d11f-d75b-4c11-ab0b-a346caf502d3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item.description","label":"4 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice_task","column_name":"description"},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item","label":"8 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Records","label":"1 - Look Up Records➛Integration Error Records","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Table","label":"1 - Look Up Records➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir","label":"Input➛PSM IR","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"58d56e93-33e2-4ae6-8a99-1959aa5a1b26","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.status","label":"Input➛Status","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Error","value":"Error","order":0.0},{"label":"Success","value":"Success","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"015c1cde-792c-4f28-9f99-175b344d5efc","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item","label":"4 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.record","label":"5 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.table_name","label":"5 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir.purchase_order.purchase_requisition","label":"Input➛PSM IR➛Purchase order➛Purchase requisition","reference":"sn_shop_purchase_requisition","reference_display":"Purchase Requisition","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order","column_name":"purchase_requisition"},{"name":"subflow.psm_ir.purchase_order","label":"Input➛PSM IR➛Purchase order","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","parent_table_name":"sn_shop_invoice","column_name":"purchase_order"},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.record","label":"17 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.table_name","label":"17 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__action_status__","label":"17 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__dont_treat_as_error__","label":"17 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
         <master_snapshot>23100b4e8758a110c04eb259dabb350a</master_snapshot>
-        <name>Invoice Receipt Error Handling</name>
+        <name>Invoice Error Handling</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
@@ -30,14 +30,14 @@
         <sys_domain_path>/</sys_domain_path>
         <sys_id>26d0e50187739110c04eb259dabb357b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Invoice Receipt Error Handling</sys_name>
+        <sys_name>Invoice Error Handling</sys_name>
         <sys_overrides/>
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_hub_flow_26d0e50187739110c04eb259dabb357b</sys_update_name>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:15:23</sys_updated_on>
+        <sys_updated_on>2023-04-18 10:05:50</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=26d0e50187739110c04eb259dabb357b"/>
@@ -98,7 +98,7 @@
         <label>PSM IR</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</model>
+        <model display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</model>
         <model_id>26d0e50187739110c04eb259dabb357b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_26d0e50187739110c04eb259dabb357b</name>
@@ -181,7 +181,7 @@
         <label>Error Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</model>
+        <model display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</model>
         <model_id>26d0e50187739110c04eb259dabb357b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_26d0e50187739110c04eb259dabb357b</name>
@@ -264,7 +264,7 @@
         <label>Status</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</model>
+        <model display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</model>
         <model_id>26d0e50187739110c04eb259dabb357b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_26d0e50187739110c04eb259dabb357b</name>
@@ -317,17 +317,17 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 11:38:45</sys_created_on>
         <sys_id>8293e9c187739110c04eb259dabb3598</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:07</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:25</sys_updated_on>
         <ui_id>b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8293e9c187739110c04eb259dabb3598"/>
@@ -393,17 +393,17 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <order>14</order>
         <parent_ui_id>3e8b1c0a-f5f4-41dd-be45-278e838ee93d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 12:14:28</sys_created_on>
         <sys_id>91cba50d87739110c04eb259dabb3556</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:08</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:25</sys_updated_on>
         <ui_id>4719e947-10bb-4e3c-b64f-da2036e1e2de</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=91cba50d87739110c04eb259dabb3556"/>
@@ -481,17 +481,17 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <order>11</order>
         <parent_ui_id>3a9c98c4-9972-4b7d-b4fc-682f3898011f</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 12:14:27</sys_created_on>
         <sys_id>c5cba50d87739110c04eb259dabb3548</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:08</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:25</sys_updated_on>
         <ui_id>07f769fa-3caa-43c1-84bc-4f2ba9fe249b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c5cba50d87739110c04eb259dabb3548"/>
@@ -569,17 +569,17 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <order>16</order>
         <parent_ui_id>6da5d687-f197-42ba-86e1-5c40166dd381</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 12:14:28</sys_created_on>
         <sys_id>d1cba50d87739110c04eb259dabb355f</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>52</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:08</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:26</sys_updated_on>
         <ui_id>57d3ace1-8187-491a-8d25-f97df8926581</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d1cba50d87739110c04eb259dabb355f"/>
@@ -644,17 +644,17 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <order>5</order>
         <parent_ui_id>95ea6d65-e0f8-41e6-aa8e-8a14432c219f</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 11:38:45</sys_created_on>
         <sys_id>d693e9c187739110c04eb259dabb35b7</sys_id>
-        <sys_mod_count>48</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:07</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:25</sys_updated_on>
         <ui_id>fab2120c-8967-4456-b49c-7e093a3c0957</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d693e9c187739110c04eb259dabb35b7"/>
@@ -735,7 +735,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -749,10 +749,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 12:14:27</sys_created_on>
         <sys_id>01cba50d87739110c04eb259dabb3531</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:08</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:25</sys_updated_on>
         <ui_id>8adea7b5-ef91-48c0-bfc7-f324b7edfa20</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -808,7 +808,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <flow_variable/>
         <flow_variables_assigned>ir_exist</flow_variables_assigned>
         <inputs/>
@@ -821,10 +821,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 12:14:27</sys_created_on>
         <sys_id>05cba50d87739110c04eb259dabb354b</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:08</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:25</sys_updated_on>
         <ui_id>fae9e610-ac04-447d-9ec2-b8a3fd1b6bb8</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -855,7 +855,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -868,10 +868,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 11:38:46</sys_created_on>
         <sys_id>1a93e9c187739110c04eb259dabb35bc</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:07</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:25</sys_updated_on>
         <ui_id>6411e1f7-ed3f-4394-822b-1deac4467e3b</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -888,7 +888,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -902,10 +902,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 11:38:45</sys_created_on>
         <sys_id>4693e9c187739110c04eb259dabb359c</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:07</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:25</sys_updated_on>
         <ui_id>48464856-a262-424b-9fb0-5691f8cdc5d9</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -961,7 +961,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -975,10 +975,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 12:14:28</sys_created_on>
         <sys_id>55cba50d87739110c04eb259dabb3558</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:08</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:26</sys_updated_on>
         <ui_id>6da5d687-f197-42ba-86e1-5c40166dd381</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1034,7 +1034,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1048,10 +1048,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 12:14:27</sys_created_on>
         <sys_id>89cba50d87739110c04eb259dabb352d</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:07</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:25</sys_updated_on>
         <ui_id>aa1b3c1d-41a9-4eef-b8dc-da43ee013958</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1081,7 +1081,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1094,10 +1094,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 11:38:45</sys_created_on>
         <sys_id>9293e9c187739110c04eb259dabb35ba</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:07</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:25</sys_updated_on>
         <ui_id>4347e129-e9ba-4ddb-97b3-88dabf70b80d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1114,7 +1114,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1128,10 +1128,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 12:14:27</sys_created_on>
         <sys_id>99cba50d87739110c04eb259dabb354e</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:08</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:25</sys_updated_on>
         <ui_id>3e8b1c0a-f5f4-41dd-be45-278e838ee93d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1187,7 +1187,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1201,10 +1201,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 11:38:45</sys_created_on>
         <sys_id>9a93e9c187739110c04eb259dabb35b0</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:07</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:25</sys_updated_on>
         <ui_id>95ea6d65-e0f8-41e6-aa8e-8a14432c219f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1234,7 +1234,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1248,10 +1248,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 11:38:45</sys_created_on>
         <sys_id>9e93e9c187739110c04eb259dabb35a0</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:07</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:25</sys_updated_on>
         <ui_id>0f78d49b-f4e2-4188-947c-e5c627c42969</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1307,7 +1307,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</flow>
+        <flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1321,10 +1321,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 12:14:27</sys_created_on>
         <sys_id>c5cba50d87739110c04eb259dabb3541</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:08</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:25</sys_updated_on>
         <ui_id>3a9c98c4-9972-4b7d-b4fc-682f3898011f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1414,7 +1414,7 @@
         <label>IR Exist</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</model>
+        <model display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</model>
         <model_id>26d0e50187739110c04eb259dabb357b</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_26d0e50187739110c04eb259dabb357b</name>
@@ -1437,14 +1437,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2022-12-14 12:14:25</sys_created_on>
         <sys_id>a0cba50d87739110c04eb259dabb350b</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>IR Exist</sys_name>
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_hub_flow_variable_a0cba50d87739110c04eb259dabb350b</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:07</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1575,19 +1575,19 @@
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=26d0e50187739110c04eb259dabb357b"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=26d0e50187739110c04eb259dabb357b^sys_idNOT INfc204b4e8758a110c04eb259dabb3544"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@3cd9c2</plan>
-        <plan_id display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</plan_id>
+        <plan>com.snc.process_flow.engine.ProcessPlan@dbf0a2</plan>
+        <plan_id display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</plan_id>
         <snapshot>23100b4e8758a110c04eb259dabb350a</snapshot>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:23</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fc204b4e8758a110c04eb259dabb3544</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:36:07</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:24</sys_updated_on>
     </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1600,12 +1600,12 @@
         <copied_from_name/>
         <description/>
         <internal_name>invoice_receipt_error_handling</internal_name>
-        <label_cache>[{"name":"subflow.psm_ir.purchase_order.purchase_requisition.assigned_to","label":"Input➛PSM IR➛Purchase order➛Purchase requisition➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_requisition","column_name":"assigned_to"},{"name":"subflow.psm_ir.sys_created_by","label":"Input➛PSM IR➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice","column_name":"sys_created_by"},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__dont_treat_as_error__","label":"16 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__action_status__","label":"16 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.table_name","label":"16 - Create Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.record","label":"16 - Create Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.ir_exist","label":"Flow Variables➛IR Exist","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1f1a8380-203f-4201-aa6e-3b0b2be4e097"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__dont_treat_as_error__","label":"14 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__action_status__","label":"14 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.table_name","label":"14 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.record","label":"14 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.table_name","label":"11 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.record","label":"11 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.state","label":"8 - For Each➛Integration Error Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sn_shop_erp_error_task","column_name":"state","choices":[{"used":false,"reference":false,"label":"Pending","rawLabel":"Pending","missing":false,"image":"","selected":false,"value":"-5","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Open","rawLabel":"Open","missing":false,"image":"","selected":false,"value":"1","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Work in Progress","rawLabel":"Work in Progress","missing":false,"image":"","selected":false,"value":"2","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Closed Complete","rawLabel":"Closed Complete","missing":false,"image":"","selected":false,"value":"3","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Closed Canceled","rawLabel":"Closed Canceled","missing":false,"image":"","selected":false,"value":"10","parameters":{"name":"sn_shop_task"}}]},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.description","label":"8 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_erp_error_task","column_name":"description"},{"name":"subflow.error_message","label":"Input➛Error Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"11d1d11f-d75b-4c11-ab0b-a346caf502d3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item.description","label":"4 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice_task","column_name":"description"},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item","label":"8 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Records","label":"1 - Look Up Records➛Integration Error Records","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Table","label":"1 - Look Up Records➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir","label":"Input➛PSM IR","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"58d56e93-33e2-4ae6-8a99-1959aa5a1b26","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.status","label":"Input➛Status","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Error","value":"Error","order":0.0},{"label":"Success","value":"Success","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"015c1cde-792c-4f28-9f99-175b344d5efc","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item","label":"4 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.record","label":"5 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.table_name","label":"5 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir.purchase_order.purchase_requisition","label":"Input➛PSM IR➛Purchase order➛Purchase requisition","reference":"sn_shop_purchase_requisition","reference_display":"Purchase Requisition","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order","column_name":"purchase_requisition"},{"name":"subflow.psm_ir.purchase_order","label":"Input➛PSM IR➛Purchase order","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","parent_table_name":"sn_shop_invoice","column_name":"purchase_order"},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.record","label":"17 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.table_name","label":"17 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__action_status__","label":"17 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__dont_treat_as_error__","label":"17 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
+        <label_cache>[{"name":"subflow.psm_ir.purchase_order.purchase_requisition.assigned_to","label":"Input➛PSM IR➛Purchase order➛Purchase requisition➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_requisition","column_name":"assigned_to"},{"name":"subflow.psm_ir.sys_created_by","label":"Input➛PSM IR➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice","column_name":"sys_created_by"},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__dont_treat_as_error__","label":"16 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__action_status__","label":"16 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.table_name","label":"16 - Create Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.record","label":"16 - Create Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.ir_exist","label":"Flow Variables➛IR Exist","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1f1a8380-203f-4201-aa6e-3b0b2be4e097"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__dont_treat_as_error__","label":"14 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__action_status__","label":"14 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.table_name","label":"14 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.record","label":"14 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.table_name","label":"11 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.record","label":"11 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.state","label":"8 - For Each➛Integration Error Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sn_shop_erp_error_task","column_name":"state","choices":[{"label":"Pending","used":false,"rawLabel":"Pending","selected":false,"missing":false,"reference":false,"image":"","value":"-5","parameters":{"name":"sn_shop_task"}},{"label":"Open","used":false,"rawLabel":"Open","selected":false,"missing":false,"reference":false,"image":"","value":"1","parameters":{"name":"sn_shop_task"}},{"label":"Work in Progress","used":false,"rawLabel":"Work in Progress","selected":false,"missing":false,"reference":false,"image":"","value":"2","parameters":{"name":"sn_shop_task"}},{"label":"Closed Complete","used":false,"rawLabel":"Closed Complete","selected":false,"missing":false,"reference":false,"image":"","value":"3","parameters":{"name":"sn_shop_task"}},{"label":"Closed Canceled","used":false,"rawLabel":"Closed Canceled","selected":false,"missing":false,"reference":false,"image":"","value":"10","parameters":{"name":"sn_shop_task"}}]},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.description","label":"8 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_erp_error_task","column_name":"description"},{"name":"subflow.error_message","label":"Input➛Error Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"11d1d11f-d75b-4c11-ab0b-a346caf502d3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item.description","label":"4 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice_task","column_name":"description"},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item","label":"8 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Records","label":"1 - Look Up Records➛Integration Error Records","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Table","label":"1 - Look Up Records➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir","label":"Input➛PSM IR","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"58d56e93-33e2-4ae6-8a99-1959aa5a1b26","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.status","label":"Input➛Status","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Error","value":"Error","order":0.0},{"label":"Success","value":"Success","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"015c1cde-792c-4f28-9f99-175b344d5efc","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item","label":"4 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.record","label":"5 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.table_name","label":"5 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir.purchase_order.purchase_requisition","label":"Input➛PSM IR➛Purchase order➛Purchase requisition","reference":"sn_shop_purchase_requisition","reference_display":"Purchase Requisition","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order","column_name":"purchase_requisition"},{"name":"subflow.psm_ir.purchase_order","label":"Input➛PSM IR➛Purchase order","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","parent_table_name":"sn_shop_invoice","column_name":"purchase_order"},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.record","label":"17 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.table_name","label":"17 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__action_status__","label":"17 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__dont_treat_as_error__","label":"17 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}}]</label_cache>
         <master>true</master>
-        <name>Invoice Receipt Error Handling</name>
+        <name>Invoice Error Handling</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="Invoice Receipt Error Handling">26d0e50187739110c04eb259dabb357b</parent_flow>
+        <parent_flow display_value="Invoice Error Handling">26d0e50187739110c04eb259dabb357b</parent_flow>
         <remote_trigger_id/>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -1617,7 +1617,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>23100b4e8758a110c04eb259dabb350a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1625,7 +1625,7 @@
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:58</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:16</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=23100b4e8758a110c04eb259dabb350a"/>
@@ -1686,7 +1686,7 @@
         <label>Status</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</model>
+        <model display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</model>
         <model_id>23100b4e8758a110c04eb259dabb350a</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_23100b4e8758a110c04eb259dabb350a</name>
@@ -1769,7 +1769,7 @@
         <label>Error Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</model>
+        <model display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</model>
         <model_id>23100b4e8758a110c04eb259dabb350a</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_23100b4e8758a110c04eb259dabb350a</name>
@@ -1852,7 +1852,7 @@
         <label>PSM IR</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</model>
+        <model display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</model>
         <model_id>23100b4e8758a110c04eb259dabb350a</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_23100b4e8758a110c04eb259dabb350a</name>
@@ -1905,17 +1905,17 @@
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <order>5</order>
         <parent_ui_id>95ea6d65-e0f8-41e6-aa8e-8a14432c219f</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:21</sys_created_on>
         <sys_id>10200b4e8758a110c04eb259dabb35c6</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:58</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
         <ui_id>fab2120c-8967-4456-b49c-7e093a3c0957</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=10200b4e8758a110c04eb259dabb35c6"/>
@@ -1993,17 +1993,17 @@
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <order>11</order>
         <parent_ui_id>3a9c98c4-9972-4b7d-b4fc-682f3898011f</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:21</sys_created_on>
         <sys_id>14200b4e8758a110c04eb259dabb35cc</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:58</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
         <ui_id>07f769fa-3caa-43c1-84bc-4f2ba9fe249b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=14200b4e8758a110c04eb259dabb35cc"/>
@@ -2081,17 +2081,17 @@
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <order>1</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:21</sys_created_on>
         <sys_id>50200b4e8758a110c04eb259dabb35be</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:57</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
         <ui_id>b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=50200b4e8758a110c04eb259dabb35be"/>
@@ -2143,17 +2143,17 @@
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <order>14</order>
         <parent_ui_id>3e8b1c0a-f5f4-41dd-be45-278e838ee93d</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:21</sys_created_on>
         <sys_id>90200b4e8758a110c04eb259dabb35d2</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:58</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:16</sys_updated_on>
         <ui_id>4719e947-10bb-4e3c-b64f-da2036e1e2de</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=90200b4e8758a110c04eb259dabb35d2"/>
@@ -2231,17 +2231,17 @@
         <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <order>16</order>
         <parent_ui_id>6da5d687-f197-42ba-86e1-5c40166dd381</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:21</sys_created_on>
         <sys_id>d4200b4e8758a110c04eb259dabb35d9</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:58</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:16</sys_updated_on>
         <ui_id>57d3ace1-8187-491a-8d25-f97df8926581</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=d4200b4e8758a110c04eb259dabb35d9"/>
@@ -2309,7 +2309,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2323,10 +2323,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:20</sys_created_on>
         <sys_id>04200b4e8758a110c04eb259dabb3595</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:57</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
         <ui_id>0f78d49b-f4e2-4188-947c-e5c627c42969</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2382,7 +2382,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2396,10 +2396,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:20</sys_created_on>
         <sys_id>08200b4e8758a110c04eb259dabb35a1</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:58</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
         <ui_id>aa1b3c1d-41a9-4eef-b8dc-da43ee013958</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2429,7 +2429,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2443,10 +2443,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:20</sys_created_on>
         <sys_id>0c200b4e8758a110c04eb259dabb35a7</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:58</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
         <ui_id>3a9c98c4-9972-4b7d-b4fc-682f3898011f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2502,7 +2502,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2516,10 +2516,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:20</sys_created_on>
         <sys_id>40200b4e8758a110c04eb259dabb356b</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:57</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
         <ui_id>48464856-a262-424b-9fb0-5691f8cdc5d9</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2575,7 +2575,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2589,10 +2589,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:21</sys_created_on>
         <sys_id>40200b4e8758a110c04eb259dabb35b3</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:58</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:16</sys_updated_on>
         <ui_id>6da5d687-f197-42ba-86e1-5c40166dd381</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2648,7 +2648,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2662,10 +2662,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:20</sys_created_on>
         <sys_id>44200b4e8758a110c04eb259dabb35a4</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:58</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
         <ui_id>8adea7b5-ef91-48c0-bfc7-f324b7edfa20</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2721,7 +2721,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2734,10 +2734,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:20</sys_created_on>
         <sys_id>4c200b4e8758a110c04eb259dabb359e</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:58</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
         <ui_id>6411e1f7-ed3f-4394-822b-1deac4467e3b</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2754,7 +2754,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2768,10 +2768,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:20</sys_created_on>
         <sys_id>4c200b4e8758a110c04eb259dabb35ae</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:58</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:16</sys_updated_on>
         <ui_id>3e8b1c0a-f5f4-41dd-be45-278e838ee93d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2827,7 +2827,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2840,10 +2840,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:20</sys_created_on>
         <sys_id>80200b4e8758a110c04eb259dabb359c</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:58</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
         <ui_id>4347e129-e9ba-4ddb-97b3-88dabf70b80d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2860,7 +2860,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <flow_variable/>
         <flow_variables_assigned>ir_exist</flow_variables_assigned>
         <inputs/>
@@ -2873,10 +2873,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:20</sys_created_on>
         <sys_id>c0200b4e8758a110c04eb259dabb35ab</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:58</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
         <ui_id>fae9e610-ac04-447d-9ec2-b8a3fd1b6bb8</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2907,7 +2907,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
+        <flow display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2921,10 +2921,10 @@
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-01-11 17:28:20</sys_created_on>
         <sys_id>c8200b4e8758a110c04eb259dabb3598</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 16:35:57</sys_updated_on>
+        <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
         <ui_id>95ea6d65-e0f8-41e6-aa8e-8a14432c219f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2988,7 +2988,7 @@
         <label>IR Exist</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Invoice Receipt Error Handling">23100b4e8758a110c04eb259dabb350a</model>
+        <model display_value="Invoice Error Handling">23100b4e8758a110c04eb259dabb350a</model>
         <model_id>23100b4e8758a110c04eb259dabb350a</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_23100b4e8758a110c04eb259dabb350a</name>
@@ -3118,9 +3118,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>7f100b4e8758a110c04eb259dabb354b</sys_id>
-            <sys_mod_count>9</sys_mod_count>
+            <sys_mod_count>11</sys_mod_count>
             <sys_updated_by>satya</sys_updated_by>
-            <sys_updated_on>2023-04-17 16:35:57</sys_updated_on>
+            <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
             <value>Error</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3138,9 +3138,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>7b100b4e8758a110c04eb259dabb354d</sys_id>
-            <sys_mod_count>9</sys_mod_count>
+            <sys_mod_count>11</sys_mod_count>
             <sys_updated_by>satya</sys_updated_by>
-            <sys_updated_on>2023-04-17 16:35:57</sys_updated_on>
+            <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
             <value>Success</value>
         </sys_choice>
     </sys_choice>

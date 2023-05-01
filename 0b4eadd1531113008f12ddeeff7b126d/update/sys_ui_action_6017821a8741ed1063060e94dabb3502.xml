@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>new  GlideRecord('sys_app').get('sys_id', '93c7f5cb875a1950fd73642d0ebb3590') &amp;&amp; new sn_sap_data_int.IntegrationsUtils().isNotRunning(current.sys_id)</condition>
+        <condition>new  GlideRecord('sys_store_app').get('sys_id', '93c7f5cb875a1950fd73642d0ebb3590') &amp;&amp; new sn_sap_data_int.IntegrationsUtils().isNotRunning(current.sys_id)</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -51,7 +51,7 @@ if (gr_con.next()) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6017821a8741ed1063060e94dabb3502</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Run Job</sys_name>
         <sys_overrides/>
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
@@ -59,7 +59,7 @@ if (gr_con.next()) {
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_ui_action_6017821a8741ed1063060e94dabb3502</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-04-25 06:51:51</sys_updated_on>
+        <sys_updated_on>2023-05-01 11:19:52</sys_updated_on>
         <table>sn_fcms_intg_source</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

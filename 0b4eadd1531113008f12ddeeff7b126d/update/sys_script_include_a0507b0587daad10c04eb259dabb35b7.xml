@@ -5,14 +5,18 @@
         <api_name>sn_fcms_intg.FinErpUtils</api_name>
         <caller_access/>
         <client_callable>false</client_callable>
-        <description/>
+        <description>Utility methods to :&#13;
+1. Check if integration error task exists for a purchase order.&#13;
+2. Check if integration error task exists for a goods receipt.&#13;
+3. Check if integration error task exists for a invoice.&#13;
+4. Check if dependent plugins are installed.&#13;
+5. Check resubmit conditions for an entity.</description>
         <name>FinErpUtils</name>
         <script><![CDATA[var FinErpUtils = Class.create();
 FinErpUtils.prototype = {
-    initialize: function() {
-    },
-	
-	getGlideRecords: function(tableName, queryParams, orderByParams) {
+    initialize: function() {},
+
+    getGlideRecords: function(tableName, queryParams, orderByParams) {
         var glideRec = new GlideRecord(tableName);
         if (!(gs.nil(queryParams))) {
             Object.keys(queryParams).forEach(function(key) {
@@ -27,14 +31,14 @@ FinErpUtils.prototype = {
         glideRec.query();
         return glideRec;
     },
-	
-	checkIfIntegrationErrorExistsForPO: function(po_sys_id) {
+
+    checkIfIntegrationErrorExistsForPO: function(po_sys_id) {
         var integrationErrorRecs = this.getGlideRecords('sn_shop_erp_error_task', {
             purchase_order: po_sys_id.toString(),
             subtype: 'purchase_order',
             state: 1
         });
-		return integrationErrorRecs.hasNext();
+        return integrationErrorRecs.hasNext();
     },
     checkIfIntegrationErrorExistsForGR: function(gr_sys_id) {
         var integrationErrorRecs = this.getGlideRecords('sn_shop_erp_error_task', {
@@ -42,7 +46,7 @@ FinErpUtils.prototype = {
             subtype: 'receipt',
             state: 1
         });
-       return integrationErrorRecs.hasNext();
+        return integrationErrorRecs.hasNext();
     },
     checkIfIntegrationErrorExistsForIR: function(ir_sys_id) {
         var integrationErrorRecs = this.getGlideRecords('sn_shop_erp_error_task', {
@@ -52,20 +56,44 @@ FinErpUtils.prototype = {
         });
         return integrationErrorRecs.hasNext();
     },
+    CheckIfPluginDependeciesInstalled: function(scopeNames) {
 
+        scopeNames.forEach(function(key) {
+            var isInstalled = this.getGlideRecords('sys_store_app', {
+                scope: key
+            }).hasNext();
+            if (!isInstalled) {
+                return false;
+            }
+        });
+        return true;
+    },
+    CheckResubmitCondition: function(current, entity) {
+        if (current) {
+            if (entity == 'GR')
+                return (this.CheckIfPluginDependeciesInstalled(['sn_psm_sap_int']) && current.erp_gr_number == '' && current.status == 'pending_submission' && this.checkIfIntegrationErrorExistsForGR(current.purchase_order_line.purchase_order.sys_id));
+
+            if (entity == "PO")
+                return (this.CheckIfPluginDependeciesInstalled(['sn_psm_sap_int']) && current.status == 'pending_submission' && current.erp_number == '' && this.checkIfIntegrationErrorExistsForPO(current.sys_id));
+
+            if (entity == 'IR')
+                return (this.CheckIfPluginDependeciesInstalled(['sn_apm_sap_int']) && current.erp_number == '' && current.state == 'approved' && this.checkIfIntegrationErrorExistsForIR(current.purchase_order.sys_id));
+
+        }
+    },
     type: 'FinErpUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-18 04:30:57</sys_created_on>
         <sys_id>a0507b0587daad10c04eb259dabb35b7</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>FinErpUtils</sys_name>
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_script_include_a0507b0587daad10c04eb259dabb35b7</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-24 15:37:07</sys_updated_on>
+        <sys_updated_on>2023-05-01 13:54:27</sys_updated_on>
     </sys_script_include>
 </record_update>

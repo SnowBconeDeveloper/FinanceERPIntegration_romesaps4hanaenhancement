@@ -5,19 +5,19 @@
         <active>true</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Goods Receipt">166a7ca587e2a110c04eb259dabb3529</category>
         <copied_from>c88b7e5f87342110c04eb259dabb3581</copied_from>
         <copied_from_name>Goods Receipt error handling</copied_from_name>
-        <description/>
+        <description>Creates a new integration error task or marks existing integration error task as closed complete for a goods receipt.</description>
         <internal_name>goods_receipt_error_handling</internal_name>
-        <label_cache>[{"name":"subflow.psm_gr.purchase_order_line.spend_purchase_requisition","label":"Input➛PSM GR➛Purchase order line➛Purchase requisition","reference":"sn_shop_purchase_requisition","reference_display":"Purchase Requisition","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order_line","column_name":"spend_purchase_requisition"},{"name":"subflow.psm_gr.purchase_order_line.spend_purchase_requisition.assigned_to","label":"Input➛PSM GR➛Purchase order line➛Purchase requisition➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_requisition","column_name":"assigned_to"},{"name":"flow_variable.gr_exist","label":"Flow Variables➛GR Exist","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"522c9b43-eeeb-48a9-92c8-ac6a91e15fa5"}},{"name":"subflow.psm_gr.purchase_order_line","label":"Input➛PSM GR➛Purchase order line","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","parent_table_name":"sn_shop_receipt","column_name":"purchase_order_line"},{"name":"subflow.psm_gr.purchase_order_line.purchase_order","label":"Input➛PSM GR➛Purchase order line➛Purchase order","reference":"sn_shop_order","reference_display":"Order Template","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order_line","column_name":"purchase_order"},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__dont_treat_as_error__","label":"17 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__action_status__","label":"17 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.table_name","label":"17 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.record","label":"17 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir.purchase_order","label":"Input➛PSM IR➛Purchase order","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","parent_table_name":"sn_shop_invoice","column_name":"purchase_order"},{"name":"subflow.psm_ir.purchase_order.purchase_requisition","label":"Input➛PSM IR➛Purchase order➛Purchase requisition","reference":"sn_shop_purchase_requisition","reference_display":"Purchase Requisition","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order","column_name":"purchase_requisition"},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.table_name","label":"5 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.record","label":"5 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item","label":"4 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"subflow.status","label":"Input➛Status","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Error","value":"Error","order":0.0},{"label":"Success","value":"Success","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"015c1cde-792c-4f28-9f99-175b344d5efc","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.psm_ir","label":"Input➛PSM IR","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"58d56e93-33e2-4ae6-8a99-1959aa5a1b26","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Table","label":"1 - Look Up Records➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Records","label":"1 - Look Up Records➛Integration Error Records","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item","label":"8 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item.description","label":"4 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice_task","column_name":"description"},{"name":"subflow.error_message","label":"Input➛Error Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"11d1d11f-d75b-4c11-ab0b-a346caf502d3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.description","label":"8 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_erp_error_task","column_name":"description"},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.state","label":"8 - For Each➛Integration Error Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sn_shop_erp_error_task","column_name":"state","choices":[{"used":false,"reference":false,"label":"Pending","rawLabel":"Pending","missing":false,"image":"","selected":false,"value":"-5","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Open","rawLabel":"Open","missing":false,"image":"","selected":false,"value":"1","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Work in Progress","rawLabel":"Work in Progress","missing":false,"image":"","selected":false,"value":"2","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Closed Complete","rawLabel":"Closed Complete","missing":false,"image":"","selected":false,"value":"3","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Closed Canceled","rawLabel":"Closed Canceled","missing":false,"image":"","selected":false,"value":"10","parameters":{"name":"sn_shop_task"}}]},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.record","label":"11 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.table_name","label":"11 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.record","label":"14 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.table_name","label":"14 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__action_status__","label":"14 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__dont_treat_as_error__","label":"14 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.ir_exist","label":"Flow Variables➛IR Exist","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1f1a8380-203f-4201-aa6e-3b0b2be4e097"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.record","label":"16 - Create Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.table_name","label":"16 - Create Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__action_status__","label":"16 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__dont_treat_as_error__","label":"16 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir.sys_created_by","label":"Input➛PSM IR➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice","column_name":"sys_created_by"},{"name":"subflow.psm_ir.purchase_order.purchase_requisition.assigned_to","label":"Input➛PSM IR➛Purchase order➛Purchase requisition➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_requisition","column_name":"assigned_to"}]</label_cache>
+        <label_cache>[{"name":"subflow.psm_ir.purchase_order.purchase_requisition.assigned_to","label":"Input➛PSM IR➛Purchase order➛Purchase requisition➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_requisition","column_name":"assigned_to"},{"name":"subflow.psm_ir.sys_created_by","label":"Input➛PSM IR➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice","column_name":"sys_created_by"},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__dont_treat_as_error__","label":"16 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__action_status__","label":"16 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.table_name","label":"16 - Create Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.record","label":"16 - Create Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.ir_exist","label":"Flow Variables➛IR Exist","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1f1a8380-203f-4201-aa6e-3b0b2be4e097"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__dont_treat_as_error__","label":"14 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__action_status__","label":"14 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.table_name","label":"14 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.record","label":"14 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.table_name","label":"11 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.record","label":"11 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.state","label":"8 - For Each➛Integration Error Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sn_shop_erp_error_task","column_name":"state","choices":[{"used":false,"label":"Pending","missing":false,"selected":false,"reference":false,"rawLabel":"Pending","image":"","value":"-5","parameters":{"name":"sn_shop_task"}},{"used":false,"label":"Open","missing":false,"selected":false,"reference":false,"rawLabel":"Open","image":"","value":"1","parameters":{"name":"sn_shop_task"}},{"used":false,"label":"Work in Progress","missing":false,"selected":false,"reference":false,"rawLabel":"Work in Progress","image":"","value":"2","parameters":{"name":"sn_shop_task"}},{"used":false,"label":"Closed Complete","missing":false,"selected":false,"reference":false,"rawLabel":"Closed Complete","image":"","value":"3","parameters":{"name":"sn_shop_task"}},{"used":false,"label":"Closed Canceled","missing":false,"selected":false,"reference":false,"rawLabel":"Closed Canceled","image":"","value":"10","parameters":{"name":"sn_shop_task"}}]},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.description","label":"8 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_erp_error_task","column_name":"description"},{"name":"subflow.error_message","label":"Input➛Error Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"11d1d11f-d75b-4c11-ab0b-a346caf502d3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item.description","label":"4 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice_task","column_name":"description"},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item","label":"8 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Records","label":"1 - Look Up Records➛Integration Error Records","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Table","label":"1 - Look Up Records➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir","label":"Input➛PSM IR","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"58d56e93-33e2-4ae6-8a99-1959aa5a1b26","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.status","label":"Input➛Status","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Error","value":"Error","order":0.0},{"label":"Success","value":"Success","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"015c1cde-792c-4f28-9f99-175b344d5efc","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item","label":"4 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.record","label":"5 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.table_name","label":"5 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir.purchase_order.purchase_requisition","label":"Input➛PSM IR➛Purchase order➛Purchase requisition","reference":"sn_shop_purchase_requisition","reference_display":"Purchase Requisition","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order","column_name":"purchase_requisition"},{"name":"subflow.psm_ir.purchase_order","label":"Input➛PSM IR➛Purchase order","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","parent_table_name":"sn_shop_invoice","column_name":"purchase_order"},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.record","label":"17 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.table_name","label":"17 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__action_status__","label":"17 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__dont_treat_as_error__","label":"17 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"subflow.psm_gr.purchase_order_line.purchase_order","label":"Input➛PSM GR➛Purchase order line➛Purchase order","reference":"sn_shop_order","reference_display":"Order Template","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order_line","column_name":"purchase_order"},{"name":"subflow.psm_gr.purchase_order_line","label":"Input➛PSM GR➛Purchase order line","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","parent_table_name":"sn_shop_receipt","column_name":"purchase_order_line"},{"name":"flow_variable.gr_exist","label":"Flow Variables➛GR Exist","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"522c9b43-eeeb-48a9-92c8-ac6a91e15fa5"}},{"name":"subflow.psm_gr.purchase_order_line.spend_purchase_requisition.assigned_to","label":"Input➛PSM GR➛Purchase order line➛Purchase requisition➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_requisition","column_name":"assigned_to"},{"name":"subflow.psm_gr.purchase_order_line.spend_purchase_requisition","label":"Input➛PSM GR➛Purchase order line➛Purchase requisition","reference":"sn_shop_purchase_requisition","reference_display":"Purchase Requisition","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order_line","column_name":"spend_purchase_requisition"}]</label_cache>
         <master_snapshot>36f3736887016510c04eb259dabb3570</master_snapshot>
         <name>Goods Receipt Error Handling</name>
         <natlang/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
         <remote_trigger_id/>
-        <run_as>system</run_as>
+        <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
@@ -37,7 +37,7 @@
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_hub_flow_a442f3e487016510c04eb259dabb3530</sys_update_name>
         <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
-        <sys_updated_on>2023-04-18 06:15:34</sys_updated_on>
+        <sys_updated_on>2023-05-01 15:30:05</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=a442f3e487016510c04eb259dabb3530"/>
@@ -324,10 +324,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:57</sys_created_on>
         <sys_id>025237e487016510c04eb259dabb3590</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:24</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:40</sys_updated_on>
         <ui_id>4719e947-10bb-4e3c-b64f-da2036e1e2de</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=025237e487016510c04eb259dabb3590"/>
@@ -412,10 +412,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:04:02</sys_created_on>
         <sys_id>1f5237e487016510c04eb259dabb3596</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:24</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:40</sys_updated_on>
         <ui_id>57d3ace1-8187-491a-8d25-f97df8926581</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1f5237e487016510c04eb259dabb3596"/>
@@ -487,10 +487,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:42</sys_created_on>
         <sys_id>2e42f3e487016510c04eb259dabb35a8</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:23</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:39</sys_updated_on>
         <ui_id>b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2e42f3e487016510c04eb259dabb35a8"/>
@@ -549,10 +549,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:47</sys_created_on>
         <sys_id>6342f3e487016510c04eb259dabb35e2</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:23</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:40</sys_updated_on>
         <ui_id>fab2120c-8967-4456-b49c-7e093a3c0957</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6342f3e487016510c04eb259dabb35e2"/>
@@ -637,10 +637,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:52</sys_created_on>
         <sys_id>b452f3e487016510c04eb259dabb35e8</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:24</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:40</sys_updated_on>
         <ui_id>07f769fa-3caa-43c1-84bc-4f2ba9fe249b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=b452f3e487016510c04eb259dabb35e8"/>
@@ -735,10 +735,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:36</sys_created_on>
         <sys_id>0142f3e487016510c04eb259dabb358f</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:24</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:40</sys_updated_on>
         <ui_id>8adea7b5-ef91-48c0-bfc7-f324b7edfa20</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -807,10 +807,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:36</sys_created_on>
         <sys_id>4942f3e487016510c04eb259dabb356d</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:23</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:40</sys_updated_on>
         <ui_id>4347e129-e9ba-4ddb-97b3-88dabf70b80d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -841,10 +841,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:36</sys_created_on>
         <sys_id>7442f3e487016510c04eb259dabb3561</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:23</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:39</sys_updated_on>
         <ui_id>48464856-a262-424b-9fb0-5691f8cdc5d9</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -914,10 +914,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:36</sys_created_on>
         <sys_id>8142f3e487016510c04eb259dabb356a</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:23</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:40</sys_updated_on>
         <ui_id>95ea6d65-e0f8-41e6-aa8e-8a14432c219f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -961,10 +961,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:37</sys_created_on>
         <sys_id>8142f3e487016510c04eb259dabb359a</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:24</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:40</sys_updated_on>
         <ui_id>3e8b1c0a-f5f4-41dd-be45-278e838ee93d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1033,10 +1033,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:36</sys_created_on>
         <sys_id>8542f3e487016510c04eb259dabb3596</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:24</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:40</sys_updated_on>
         <ui_id>fae9e610-ac04-447d-9ec2-b8a3fd1b6bb8</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1080,10 +1080,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:36</sys_created_on>
         <sys_id>c142f3e487016510c04eb259dabb3589</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:23</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:40</sys_updated_on>
         <ui_id>6411e1f7-ed3f-4394-822b-1deac4467e3b</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1114,10 +1114,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:36</sys_created_on>
         <sys_id>c542f3e487016510c04eb259dabb3566</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:23</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:40</sys_updated_on>
         <ui_id>0f78d49b-f4e2-4188-947c-e5c627c42969</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1187,10 +1187,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:36</sys_created_on>
         <sys_id>c942f3e487016510c04eb259dabb3592</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:24</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:40</sys_updated_on>
         <ui_id>3a9c98c4-9972-4b7d-b4fc-682f3898011f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1260,10 +1260,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:36</sys_created_on>
         <sys_id>cd42f3e487016510c04eb259dabb358b</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:23</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:40</sys_updated_on>
         <ui_id>aa1b3c1d-41a9-4eef-b8dc-da43ee013958</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1307,10 +1307,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:37</sys_created_on>
         <sys_id>d142f3e487016510c04eb259dabb359e</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:24</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:40</sys_updated_on>
         <ui_id>6da5d687-f197-42ba-86e1-5c40166dd381</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1423,14 +1423,14 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:03:34</sys_created_on>
         <sys_id>a442f3e487016510c04eb259dabb353a</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>GR Exist</sys_name>
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_hub_flow_variable_a442f3e487016510c04eb259dabb353a</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:23</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1561,7 +1561,7 @@
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=a442f3e487016510c04eb259dabb3530"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=a442f3e487016510c04eb259dabb3530^sys_idNOT IN5e14376887016510c04eb259dabb353e"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@1ec2ce7</plan>
+        <plan>com.snc.process_flow.engine.ProcessPlan@179832d</plan>
         <plan_id display_value="Goods Receipt Error Handling">a442f3e487016510c04eb259dabb3530</plan_id>
         <snapshot>36f3736887016510c04eb259dabb3570</snapshot>
         <sys_created_by>Akash</sys_created_by>
@@ -1569,11 +1569,11 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5e14376887016510c04eb259dabb353e</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:23</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:39</sys_updated_on>
     </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1581,19 +1581,19 @@
         <active>true</active>
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
-        <category/>
+        <category display_value="Goods Receipt">166a7ca587e2a110c04eb259dabb3529</category>
         <copied_from/>
         <copied_from_name/>
-        <description/>
+        <description>Creates a new integration error task or marks existing integration error task as closed complete for a goods receipt.</description>
         <internal_name>goods_receipt_error_handling</internal_name>
-        <label_cache>[{"name":"subflow.psm_gr.purchase_order_line.spend_purchase_requisition","label":"Input➛PSM GR➛Purchase order line➛Purchase requisition","reference":"sn_shop_purchase_requisition","reference_display":"Purchase Requisition","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order_line","column_name":"spend_purchase_requisition"},{"name":"subflow.psm_gr.purchase_order_line.spend_purchase_requisition.assigned_to","label":"Input➛PSM GR➛Purchase order line➛Purchase requisition➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_requisition","column_name":"assigned_to"},{"name":"flow_variable.gr_exist","label":"Flow Variables➛GR Exist","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"522c9b43-eeeb-48a9-92c8-ac6a91e15fa5"}},{"name":"subflow.psm_gr.purchase_order_line","label":"Input➛PSM GR➛Purchase order line","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","parent_table_name":"sn_shop_receipt","column_name":"purchase_order_line"},{"name":"subflow.psm_gr.purchase_order_line.purchase_order","label":"Input➛PSM GR➛Purchase order line➛Purchase order","reference":"sn_shop_order","reference_display":"Order Template","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order_line","column_name":"purchase_order"},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__dont_treat_as_error__","label":"17 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__action_status__","label":"17 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.table_name","label":"17 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.record","label":"17 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir.purchase_order","label":"Input➛PSM IR➛Purchase order","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","parent_table_name":"sn_shop_invoice","column_name":"purchase_order"},{"name":"subflow.psm_ir.purchase_order.purchase_requisition","label":"Input➛PSM IR➛Purchase order➛Purchase requisition","reference":"sn_shop_purchase_requisition","reference_display":"Purchase Requisition","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order","column_name":"purchase_requisition"},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.table_name","label":"5 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.record","label":"5 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item","label":"4 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"subflow.status","label":"Input➛Status","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Error","value":"Error","order":0.0},{"label":"Success","value":"Success","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"015c1cde-792c-4f28-9f99-175b344d5efc","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.psm_ir","label":"Input➛PSM IR","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"58d56e93-33e2-4ae6-8a99-1959aa5a1b26","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Table","label":"1 - Look Up Records➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Records","label":"1 - Look Up Records➛Integration Error Records","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item","label":"8 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item.description","label":"4 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice_task","column_name":"description"},{"name":"subflow.error_message","label":"Input➛Error Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"11d1d11f-d75b-4c11-ab0b-a346caf502d3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.description","label":"8 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_erp_error_task","column_name":"description"},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.state","label":"8 - For Each➛Integration Error Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sn_shop_erp_error_task","column_name":"state","choices":[{"used":false,"reference":false,"label":"Pending","rawLabel":"Pending","missing":false,"image":"","selected":false,"value":"-5","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Open","rawLabel":"Open","missing":false,"image":"","selected":false,"value":"1","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Work in Progress","rawLabel":"Work in Progress","missing":false,"image":"","selected":false,"value":"2","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Closed Complete","rawLabel":"Closed Complete","missing":false,"image":"","selected":false,"value":"3","parameters":{"name":"sn_shop_task"}},{"used":false,"reference":false,"label":"Closed Canceled","rawLabel":"Closed Canceled","missing":false,"image":"","selected":false,"value":"10","parameters":{"name":"sn_shop_task"}}]},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.record","label":"11 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.table_name","label":"11 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.record","label":"14 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.table_name","label":"14 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__action_status__","label":"14 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__dont_treat_as_error__","label":"14 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.ir_exist","label":"Flow Variables➛IR Exist","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1f1a8380-203f-4201-aa6e-3b0b2be4e097"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.record","label":"16 - Create Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.table_name","label":"16 - Create Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__action_status__","label":"16 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__dont_treat_as_error__","label":"16 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir.sys_created_by","label":"Input➛PSM IR➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice","column_name":"sys_created_by"},{"name":"subflow.psm_ir.purchase_order.purchase_requisition.assigned_to","label":"Input➛PSM IR➛Purchase order➛Purchase requisition➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_requisition","column_name":"assigned_to"}]</label_cache>
+        <label_cache>[{"name":"subflow.psm_ir.purchase_order.purchase_requisition.assigned_to","label":"Input➛PSM IR➛Purchase order➛Purchase requisition➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_requisition","column_name":"assigned_to"},{"name":"subflow.psm_ir.sys_created_by","label":"Input➛PSM IR➛Created by","reference":"","reference_display":"Created by","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice","column_name":"sys_created_by"},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__dont_treat_as_error__","label":"16 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.__action_status__","label":"16 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.table_name","label":"16 - Create Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"57d3ace1-8187-491a-8d25-f97df8926581.record","label":"16 - Create Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.ir_exist","label":"Flow Variables➛IR Exist","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1f1a8380-203f-4201-aa6e-3b0b2be4e097"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__dont_treat_as_error__","label":"14 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.__action_status__","label":"14 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.table_name","label":"14 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4719e947-10bb-4e3c-b64f-da2036e1e2de.record","label":"14 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.table_name","label":"11 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07f769fa-3caa-43c1-84bc-4f2ba9fe249b.record","label":"11 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.state","label":"8 - For Each➛Integration Error Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"sn_shop_erp_error_task","column_name":"state","choices":[{"used":false,"label":"Pending","missing":false,"selected":false,"reference":false,"rawLabel":"Pending","image":"","value":"-5","parameters":{"name":"sn_shop_task"}},{"used":false,"label":"Open","missing":false,"selected":false,"reference":false,"rawLabel":"Open","image":"","value":"1","parameters":{"name":"sn_shop_task"}},{"used":false,"label":"Work in Progress","missing":false,"selected":false,"reference":false,"rawLabel":"Work in Progress","image":"","value":"2","parameters":{"name":"sn_shop_task"}},{"used":false,"label":"Closed Complete","missing":false,"selected":false,"reference":false,"rawLabel":"Closed Complete","image":"","value":"3","parameters":{"name":"sn_shop_task"}},{"used":false,"label":"Closed Canceled","missing":false,"selected":false,"reference":false,"rawLabel":"Closed Canceled","image":"","value":"10","parameters":{"name":"sn_shop_task"}}]},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item.description","label":"8 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_erp_error_task","column_name":"description"},{"name":"subflow.error_message","label":"Input➛Error Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"11d1d11f-d75b-4c11-ab0b-a346caf502d3","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item.description","label":"4 - For Each➛Integration Error Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"sn_shop_invoice_task","column_name":"description"},{"name":"aa1b3c1d-41a9-4eef-b8dc-da43ee013958.item","label":"8 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Records","label":"1 - Look Up Records➛Integration Error Records","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Table","label":"1 - Look Up Records➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__action_status__","label":"1 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2.__dont_treat_as_error__","label":"1 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir","label":"Input➛PSM IR","reference":"sn_shop_invoice","reference_display":"Invoice","type":"reference","base_type":"reference","column_name":"","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"58d56e93-33e2-4ae6-8a99-1959aa5a1b26","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.status","label":"Input➛Status","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"Error","value":"Error","order":0.0},{"label":"Success","value":"Success","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"015c1cde-792c-4f28-9f99-175b344d5efc","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"95ea6d65-e0f8-41e6-aa8e-8a14432c219f.item","label":"4 - For Each➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.record","label":"5 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.table_name","label":"5 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__action_status__","label":"5 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fab2120c-8967-4456-b49c-7e093a3c0957.__dont_treat_as_error__","label":"5 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.psm_ir.purchase_order.purchase_requisition","label":"Input➛PSM IR➛Purchase order➛Purchase requisition","reference":"sn_shop_purchase_requisition","reference_display":"Purchase Requisition","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order","column_name":"purchase_requisition"},{"name":"subflow.psm_ir.purchase_order","label":"Input➛PSM IR➛Purchase order","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","parent_table_name":"sn_shop_invoice","column_name":"purchase_order"},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.record","label":"17 - Update Record➛Integration Error Record","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.table_name","label":"17 - Update Record➛Integration Error Table","reference":"sn_shop_erp_error_task","reference_display":"Integration Error","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__action_status__","label":"17 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"440a9fdf-0fef-4b57-8573-c07d9df4f648.__dont_treat_as_error__","label":"17 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"subflow.psm_gr.purchase_order_line.purchase_order","label":"Input➛PSM GR➛Purchase order line➛Purchase order","reference":"sn_shop_order","reference_display":"Order Template","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order_line","column_name":"purchase_order"},{"name":"subflow.psm_gr.purchase_order_line","label":"Input➛PSM GR➛Purchase order line","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","parent_table_name":"sn_shop_receipt","column_name":"purchase_order_line"},{"name":"flow_variable.gr_exist","label":"Flow Variables➛GR Exist","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"522c9b43-eeeb-48a9-92c8-ac6a91e15fa5"}},{"name":"subflow.psm_gr.purchase_order_line.spend_purchase_requisition.assigned_to","label":"Input➛PSM GR➛Purchase order line➛Purchase requisition➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_requisition","column_name":"assigned_to"},{"name":"subflow.psm_gr.purchase_order_line.spend_purchase_requisition","label":"Input➛PSM GR➛Purchase order line➛Purchase requisition","reference":"sn_shop_purchase_requisition","reference_display":"Purchase Requisition","type":"reference","base_type":"reference","parent_table_name":"sn_shop_purchase_order_line","column_name":"spend_purchase_requisition"}]</label_cache>
         <master>true</master>
         <name>Goods Receipt Error Handling</name>
         <natlang/>
         <outputs/>
         <parent_flow display_value="Goods Receipt Error Handling">a442f3e487016510c04eb259dabb3530</parent_flow>
         <remote_trigger_id/>
-        <run_as>system</run_as>
+        <run_as>user</run_as>
         <run_with_roles/>
         <sc_callable>false</sc_callable>
         <status>published</status>
@@ -1603,7 +1603,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>36f3736887016510c04eb259dabb3570</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1611,7 +1611,7 @@
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name/>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:14</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:30</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=36f3736887016510c04eb259dabb3570"/>
@@ -1898,10 +1898,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:29</sys_created_on>
         <sys_id>2014f36887016510c04eb259dabb354a</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:14</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:30</sys_updated_on>
         <ui_id>57d3ace1-8187-491a-8d25-f97df8926581</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2014f36887016510c04eb259dabb354a"/>
@@ -1973,10 +1973,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:12</sys_created_on>
         <sys_id>6004b36887016510c04eb259dabb352a</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:13</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:29</sys_updated_on>
         <ui_id>b02b535b-b2a8-4ae9-b40c-8fb1e6ea42a2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6004b36887016510c04eb259dabb352a"/>
@@ -2035,10 +2035,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:25</sys_created_on>
         <sys_id>6b04f36887016510c04eb259dabb3542</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:14</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:30</sys_updated_on>
         <ui_id>4719e947-10bb-4e3c-b64f-da2036e1e2de</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6b04f36887016510c04eb259dabb3542"/>
@@ -2123,10 +2123,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:21</sys_created_on>
         <sys_id>aa04b36887016510c04eb259dabb3575</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:13</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:30</sys_updated_on>
         <ui_id>07f769fa-3caa-43c1-84bc-4f2ba9fe249b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=aa04b36887016510c04eb259dabb3575"/>
@@ -2211,10 +2211,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:17</sys_created_on>
         <sys_id>e904b36887016510c04eb259dabb356f</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:13</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:29</sys_updated_on>
         <ui_id>fab2120c-8967-4456-b49c-7e093a3c0957</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=e904b36887016510c04eb259dabb356f"/>
@@ -2309,10 +2309,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:07</sys_created_on>
         <sys_id>1ff3736887016510c04eb259dabb35ff</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:13</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:29</sys_updated_on>
         <ui_id>0f78d49b-f4e2-4188-947c-e5c627c42969</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2381,10 +2381,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:08</sys_created_on>
         <sys_id>1ff3b36887016510c04eb259dabb3506</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:13</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:30</sys_updated_on>
         <ui_id>4347e129-e9ba-4ddb-97b3-88dabf70b80d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2415,10 +2415,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:07</sys_created_on>
         <sys_id>53f3736887016510c04eb259dabb35ef</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:13</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:29</sys_updated_on>
         <ui_id>48464856-a262-424b-9fb0-5691f8cdc5d9</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2487,10 +2487,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:08</sys_created_on>
         <sys_id>53f3b36887016510c04eb259dabb3517</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:13</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:30</sys_updated_on>
         <ui_id>fae9e610-ac04-447d-9ec2-b8a3fd1b6bb8</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2535,10 +2535,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:08</sys_created_on>
         <sys_id>97f3b36887016510c04eb259dabb3513</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:13</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:30</sys_updated_on>
         <ui_id>3a9c98c4-9972-4b7d-b4fc-682f3898011f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2608,10 +2608,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:08</sys_created_on>
         <sys_id>9bf3b36887016510c04eb259dabb350c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:13</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:30</sys_updated_on>
         <ui_id>aa1b3c1d-41a9-4eef-b8dc-da43ee013958</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2655,10 +2655,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:07</sys_created_on>
         <sys_id>d7f3b36887016510c04eb259dabb3503</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:13</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:29</sys_updated_on>
         <ui_id>95ea6d65-e0f8-41e6-aa8e-8a14432c219f</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2701,10 +2701,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:08</sys_created_on>
         <sys_id>dbf3b36887016510c04eb259dabb3509</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:13</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:30</sys_updated_on>
         <ui_id>6411e1f7-ed3f-4394-822b-1deac4467e3b</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2735,10 +2735,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:08</sys_created_on>
         <sys_id>dbf3b36887016510c04eb259dabb350f</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:13</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:30</sys_updated_on>
         <ui_id>8adea7b5-ef91-48c0-bfc7-f324b7edfa20</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2808,10 +2808,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:08</sys_created_on>
         <sys_id>dff3b36887016510c04eb259dabb351a</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:14</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:30</sys_updated_on>
         <ui_id>3e8b1c0a-f5f4-41dd-be45-278e838ee93d</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2881,10 +2881,10 @@
         <sys_created_by>Akash</sys_created_by>
         <sys_created_on>2023-02-13 12:11:08</sys_created_on>
         <sys_id>dff3b36887016510c04eb259dabb351e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2023-04-17 17:00:14</sys_updated_on>
+        <sys_updated_on>2023-05-01 14:50:30</sys_updated_on>
         <ui_id>6da5d687-f197-42ba-86e1-5c40166dd381</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3104,9 +3104,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>0bf3736887016510c04eb259dabb35ce</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>satya</sys_updated_by>
-            <sys_updated_on>2023-04-17 17:00:13</sys_updated_on>
+            <sys_updated_on>2023-05-01 14:50:29</sys_updated_on>
             <value>Error</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -3124,9 +3124,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>87f3736887016510c04eb259dabb35d0</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_updated_by>satya</sys_updated_by>
-            <sys_updated_on>2023-04-17 17:00:13</sys_updated_on>
+            <sys_updated_on>2023-05-01 14:50:29</sys_updated_on>
             <value>Success</value>
         </sys_choice>
     </sys_choice>

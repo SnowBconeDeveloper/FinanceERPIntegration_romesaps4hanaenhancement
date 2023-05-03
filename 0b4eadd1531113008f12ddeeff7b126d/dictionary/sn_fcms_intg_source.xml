@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="update_synch=true" db_object_id="6fa1173bc30ea110f827dff9050131ab" extends="sys_metadata" label="ERP Source Configuration" max_length="40" name="sn_fcms_intg_source" type="collection">
         <element label="Connection alias" max_length="32" name="connection" reference="sys_alias" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="ERP" max_length="40" name="erp" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="ERP" max_length="40" name="erp" type="string" hint="ERP Software Name">
             <choice>
    		            <element value="sap" sequence="0" label="SAP"/>
 		            <element value="oracle" sequence="1" label="Oracle"/>

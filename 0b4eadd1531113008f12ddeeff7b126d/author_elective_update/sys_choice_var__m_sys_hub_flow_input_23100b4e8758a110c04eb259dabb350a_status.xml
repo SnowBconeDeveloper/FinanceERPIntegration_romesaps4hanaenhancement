@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="var__m_sys_hub_flow_input_23100b4e8758a110c04eb259dabb350a" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <name>var__m_sys_hub_flow_input_23100b4e8758a110c04eb259dabb350a</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>bcone</sys_created_by>
+            <sys_created_on>2023-05-03 11:10:54</sys_created_on>
+            <sys_id>5bcb1686c3ee21109f6ee74bb00131ce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>status</sys_name>
+            <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_hub_flow_input_23100b4e8758a110c04eb259dabb350a_status</sys_update_name>
+            <sys_updated_by>bcone</sys_updated_by>
+            <sys_updated_on>2023-05-03 11:10:54</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Error</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_23100b4e8758a110c04eb259dabb350a</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>satya</sys_created_by>
+            <sys_created_on>2023-01-11 17:28:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f100b4e8758a110c04eb259dabb354b</sys_id>
+            <sys_mod_count>11</sys_mod_count>
+            <sys_updated_by>satya</sys_updated_by>
+            <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
+            <value>Error</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Success</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_23100b4e8758a110c04eb259dabb350a</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>satya</sys_created_by>
+            <sys_created_on>2023-01-11 17:28:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7b100b4e8758a110c04eb259dabb354d</sys_id>
+            <sys_mod_count>11</sys_mod_count>
+            <sys_updated_by>satya</sys_updated_by>
+            <sys_updated_on>2023-04-18 09:54:15</sys_updated_on>
+            <value>Success</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

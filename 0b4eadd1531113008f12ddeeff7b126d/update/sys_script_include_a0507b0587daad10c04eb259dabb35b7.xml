@@ -56,10 +56,9 @@ FinErpUtils.prototype = {
         });
         return integrationErrorRecs.hasNext();
     },
-    CheckIfPluginDependeciesInstalled: function(scopeNames) {
-
+    checkIfPluginDependeciesInstalled: function(scopeNames) {
         scopeNames.forEach(function(key) {
-            var isInstalled = this.getGlideRecords('sys_store_app', {
+            var isInstalled = new sn_fcms_intg.FinErpUtils().getGlideRecords('sys_store_app', {
                 scope: key
             }).hasNext();
             if (!isInstalled) {
@@ -68,18 +67,15 @@ FinErpUtils.prototype = {
         });
         return true;
     },
-    CheckResubmitCondition: function(current, entity) {
-        if (current) {
+    checkResubmitCondition: function(current, entity) {
             if (entity == 'GR')
-                return (this.CheckIfPluginDependeciesInstalled(['sn_psm_sap_int']) && current.erp_gr_number == '' && current.status == 'pending_submission' && this.checkIfIntegrationErrorExistsForGR(current.purchase_order_line.purchase_order.sys_id));
+                return (this.checkIfPluginDependeciesInstalled(['sn_psm_sap_int']) && current.erp_gr_number == '' && current.status == 'pending_submission' && this.checkIfIntegrationErrorExistsForGR(current.purchase_order_line.purchase_order.sys_id));
 
             if (entity == "PO")
-                return (this.CheckIfPluginDependeciesInstalled(['sn_psm_sap_int']) && current.status == 'pending_submission' && current.erp_number == '' && this.checkIfIntegrationErrorExistsForPO(current.sys_id));
+                return (this.checkIfPluginDependeciesInstalled(['sn_psm_sap_int']) && current.status == 'pending_submission' && current.erp_number == '' && this.checkIfIntegrationErrorExistsForPO(current.sys_id));
 
             if (entity == 'IR')
-                return (this.CheckIfPluginDependeciesInstalled(['sn_apm_sap_int']) && current.erp_number == '' && current.state == 'approved' && this.checkIfIntegrationErrorExistsForIR(current.purchase_order.sys_id));
-
-        }
+                return (this.checkIfPluginDependeciesInstalled(['sn_apm_sap_int']) && current.erp_number == '' && current.state == 'approved' && this.checkIfIntegrationErrorExistsForIR(current.purchase_order.sys_id));
     },
     type: 'FinErpUtils'
 };]]></script>
@@ -87,13 +83,13 @@ FinErpUtils.prototype = {
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2023-04-18 04:30:57</sys_created_on>
         <sys_id>a0507b0587daad10c04eb259dabb35b7</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>FinErpUtils</sys_name>
         <sys_package display_value="Finance - ERP Integration" source="sn_fcms_intg">0b4eadd1531113008f12ddeeff7b126d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Finance - ERP Integration">0b4eadd1531113008f12ddeeff7b126d</sys_scope>
         <sys_update_name>sys_script_include_a0507b0587daad10c04eb259dabb35b7</sys_update_name>
-        <sys_updated_by>shreenag.araga</sys_updated_by>
-        <sys_updated_on>2023-05-01 18:30:44</sys_updated_on>
+        <sys_updated_by>satya</sys_updated_by>
+        <sys_updated_on>2023-05-02 12:52:28</sys_updated_on>
     </sys_script_include>
 </record_update>
